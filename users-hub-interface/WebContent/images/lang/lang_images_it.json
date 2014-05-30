@@ -1,0 +1,11 @@
+{
+	"header": "Archivio immagini",
+	"slide": {
+		"title": "Immagini del @{p1}@ ",
+		"date": "@{p1}@"
+	},
+	"intro": "Questo strumento permette di visualizzare tutte le volte che vuoi tutte le immagini acquisite dalla comunità ogni giorno. Basta usare il calendario e scegliere tra le anteprime delle immagini",
+	"excl": "Oops!",
+	"noimg": "Non ci sono immagini in questo giorno",
+	"loading": "Caricamento in corso"
+}

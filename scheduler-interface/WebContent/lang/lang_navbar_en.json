@@ -1,0 +1,14 @@
+{
+	"titles" : {
+		"home": "Home",
+		"plans": {
+			"header": "Observing plans",
+			"new": "New",
+			"active": "Active",
+			"completed": "Completed"			
+		},
+        "issues": {
+            "header": "Issues"
+        }
+	}
+}

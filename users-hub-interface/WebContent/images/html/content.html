@@ -1,0 +1,69 @@
+<link href="main/css/barousel.css" rel="stylesheet"></link>
+<link href="images/css/styles.css" rel="stylesheet"></link>
+<div ng-controller="CarouselCtrl" ng-show="ready">
+	<div class="page-header" style="border: none; margin-bottom: 10px">
+		<div class="row" style="margin-bottom: 0px">
+			<h2 style="margin-left: 18px">{{'images.header' | i18n}}</h2>
+		</div>
+	</div>
+	<div style="margin-bottom: 35px">
+		<p>{{'images.intro'|i18n}}</p>
+		<p></p>
+	</div>
+	<div class="row">
+		<div class="span5">
+			<div ng-controller="DatepickerCtrl">
+				<div style="color: silver">
+					<datepicker align="left" class="rowBack" style="color: silver"
+						ng-model="dt" open="opened" min="'2013-06-01'" max="current"
+						date-disabled="disabled(date, mode)" ng-required="true"></datepicker>
+				</div>
+			</div>
+		</div>
+		<div class="span7">
+			<div class="animate-show" ng-show="!loading && slides.length > 0">
+				<div id="carousel" class="barousel"
+					style="overflow: hidden; position: relative">
+					<div class="barousel_image image" style="z-index: -100">
+						<img ng-repeat="slide in slides"
+							src="{{slide.image}}" alt="" ng-class="{'default': $first}"
+							class="">
+					</div>
+					<div class="
+							barousel_content"
+						style="height: 110px; z-index: 1000">
+						<div ng-repeat="slide in slides" ng-class="{'default': $first}">
+							<p class="header">{{'images.slide.title' | i18n:slide.rt}}</p>
+							<p>{{'images.slide.date' | i18n:(slide.date | utc |
+								date:'mediumTime') }}</p>
+							<p>
+								<b style="cursor: default" class="label label-g">{{slide.id}}</b>
+							</p>
+							<p id="buttons">
+								<a class="btn btn-primary image-btn" download="image.jpg"
+									ng-href="{{slide.image + '&download=true'}}">JPEG</a> <a
+									class="btn btn-warning image-btn" download="image.fits"
+									ng-href="{{slide.fits + '&download=true'}}">FITS</a>
+							</p>
+						</div>
+					</div>
+					<div class="barousel_nav"></div>
+				</div>
+			</div>
+			<div class="animate-show" ng-show="!loading && slides.length == 0"
+				style="width: 70%; margin-left: 15%">
+				<br>
+				<div class="alert alert-g">
+					<strong>{{'images.excl'|i18n}} </strong>{{'images.noimg'|i18n}}.
+				</div>
+			</div>
+			<div class="animate-show mess-info" ng-show="loading"
+				style="width: 40%; margin-left: 30%">
+				<br>
+				<div class="alert alert-g">
+					<strong>{{'images.loading'|i18n}}</strong>...
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

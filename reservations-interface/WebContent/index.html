@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" ng-app="toolbox">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+	href="http://fserena.github.io/GLORIAAuthoringTool/WebContent/toolbox/img/favicon.ico"
+	rel="icon">
+<!-- Bootstrap css -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-csp.css"
+	rel="stylesheet">
+<!-- Toolbox css -->
+<link href="/gatool/toolbox/css/toolbox.css" rel="stylesheet">
+
+<!-- External libraries (jQuery, Angular, Bootstrap and UI-Bootstrap) -->
+<script
+	src=https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js></script>
+<script
+	src=https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js></script>
+<script
+	src=https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js></script>
+<script
+	src=https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js></script>
+<script
+	src=https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.js></script>
+<script
+	src=https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-cookies.js></script>
+<script
+	src=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js></script>
+<script src="/gatool/toolbox/js/angular-smooth-scroll-1.6.0.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.7.0/ui-bootstrap-tpls.min.js"></script>
+<!-- Script loader -->
+<script src="/gatool/toolbox/js/script.js"></script>
+<!-- GLORIAjs API -->
+<script src="/gatool/toolbox/js/gloriapi.js"></script>
+<!-- Toolbox -->
+<script src="/gatool/toolbox/js/toolbox.js"></script>
+
+<title ng-show="titleLoaded">{{'title.browser' | i18n}}</title>
+</head>
+<body ng-cloak 
+	style="padding-top: 40px; background-attachment: fixed; background-color: black; background-image: url(/gatool/toolbox/img/main_bg.png); color: silver;">
+	<div id="body-proxy" ng-include src="bodyHtml"></div>
+</body>
+</html>

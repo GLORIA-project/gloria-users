@@ -1,0 +1,14 @@
+{
+	"titles" : {
+		"home": "Inicio",
+		"plans": {
+			"header": "Observaciones",
+			"new": "Nueva",
+			"active": "Activas",
+			"completed": "Completadas"			
+		},
+        "issues": {
+            "header": "Incidencias"
+        }
+	}
+}

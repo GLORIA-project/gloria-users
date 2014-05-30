@@ -1,0 +1,96 @@
+{
+        "header" : "Esperimento Solare",
+        "reservation": {
+                "obsolete": {
+                        "l1": "La prenotazine con id @{p1}@ è obsoleta",
+                        "l2": "Ne vuoi una nuova? Clicca",
+                        "here": "qui"
+                },
+                "unknown": "La prenotazione con id @{p1}@ non esiste",
+                "loading": "Sto caricando",
+                "problem": "Il telescopio non funziona correttamente. Per favore prova di nuovo tra alcuni minuti.",
+                "end": "La tua prenotazione è terminata. Speriamo che l'esperimento ti sia piaciuto!",
+                "login": "Non sei connesso. Ti sto trasferendo",
+                "nvalid" : "La prenotazione con id @{p1}@ non è valida."
+        },
+	"focuser": {
+				"tooltip":"Click here to change change the focuser position"
+	 		   },
+	"mount": {
+				"title":"MOUNT",
+				"ra":"RA",
+				"dec":"DEC",
+				"object":"TARGET",
+				"apply" : "Apply",
+				"close" : "Close",
+				"information": "You can move the telescope introducing the RADEC coordinates (first and second box) or the target name (third box)",
+				"messages": {
+					"ra_text": "Right Ascension Coordinate",
+					"dec_text": "Declination Coordinate"	,
+					"target_text": "Object Name",
+					"relative_move": "Move the telescope a little bit",
+					"no_alarm":"No alarm",
+					"alarm_set_radec": "Problem to set the RADEC coordinates",
+					"alarm_set_target": "Problem to set the target",
+					"alarm_taget":"Impossible to reach the target",
+					"alarm_status": "Problem to load mount status",
+					"info_ra" : "Right Ascension coordinates. Format:[0-23]:[0-59]:[0:59]"
+				},
+				"catalog": {
+					"solar_tab": "SOLAR SYSTEM",
+					"mercury": "MERCURY",
+					"venus": "VENUS",
+					"mars": "MARS",
+					"jupiter": "JUPITER",
+					"saturn": "SATURN",
+					"neptune": "NEPTUNE",
+					"uranus": "URANUS",
+					"moon":"MOON"
+				},
+				"status": {
+					"ready":"READY",
+					"error": "ERROR",
+					"stop": "STOP",
+					"undefined": "UNDEFINED",
+					"moving":"MOVING",
+					"tracking": "TRACKING",
+					"parked":"PARKED",
+					"parking":"PARKING"
+				}	
+			 },
+	"ccd": {
+				"title": "CCD",
+				"exposure_time": "TIME",
+				"information_exp": "This is the panel to control the cdds. To take an image, you have to introduce the time in the first box in seconds (max 120).",
+				"information_filter": "In the second box, you can choose one of the available filters in the telescope",
+				"filter": "FILTER",
+				"binning":"BINNING",
+				"status": {
+					"ready":"READY",
+					"exposing":"EXPOSING",
+					"transfering":"TRANSFERING",
+					"taken": "IMAGE TAKEN",
+					"error": "ERROR"
+				},
+				"messages": {
+					"no_alarm": "No alarm",
+					"internal_server": "Problem to execute the operation",
+					"alarm_start_exposure": "Problem to start the exposition",
+					"time_text": "Set the exposure time in seconds",
+					"filter_text": "Set a filter",
+					"binning_text": "Set the binning factor",
+					"expose_text": "Click here to start the exposition",
+					"video_text" : "Click here to select the video mode",
+					"main_ccd": "Click here to select the main ccd",
+					"secondary_ccd": "Click here to select the secondary ccd"
+				}
+		   },
+	"weather": {
+		"alert": "Weather alert",
+		"alarm_text" : "An alarm has been activated in the telescope. The telescope will not be able to work properly."
+	},
+	"general": {
+		"alert":"Alert",
+		"expiration_time": "Your reservation time is close to expire"
+	}
+}

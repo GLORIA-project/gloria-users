@@ -1,0 +1,16 @@
+{
+	"titles" : {
+		"home": "Home",
+		"menu": {
+			"header": "Menu",
+			"item": {
+				"header": "Header",
+				"template" : "Template"
+			}
+		},
+		"generic": {
+			"header": "Generic",
+			"template": "Template"			
+		}
+	}
+}

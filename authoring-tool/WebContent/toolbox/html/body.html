@@ -1,0 +1,21 @@
+<div style="height: 100%" ng-controller="MainController"
+	ng-if="toolboxReady">
+	<div class="page-wrap" ng-controller="LoginController">
+		<div id="header">
+			<div ng-include src="headerHtml"></div>
+			<div ng-include src="navbarHtml"></div>
+		</div>
+		<div ng-switch
+			on="headerReady && navReady && verified && canBeShown()">
+			<div ng-switch-when="true">
+				<div id="body" class="container" ng-view></div>
+			</div>
+
+			<div ng-switch-when="false" style="padding-bottom: 100px"
+				class="container"></div>
+		</div>
+	</div>
+	<div ng-if="headerReady && navReady" style="position: relative">
+		<div ng-include src="footerHtml"></div>
+	</div>
+</div>

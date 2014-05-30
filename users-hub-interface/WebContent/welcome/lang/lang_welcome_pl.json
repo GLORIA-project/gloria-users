@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "discover": "Odkrywaj",
+        "learn": "ucz się",
+        "research": "badaj",
+        "share": "dziel się",
+        "subtitle": "GLORIA otwiera nowe okno na Wszechświat"
+    },
+    "register": {
+        "title": "Dołącz do GLORIA",
+        "placeholders": {
+            "alias": "Użytkownik",
+            "email": "Email",
+            "password": "Hasło",
+            "rep-pass": "Powtórz hasło"
+        },
+        "password-res": "Przynajmniej 6 znaków, zawierających co najmniej jedną literę i cyfrę.",
+        "button": "Zarejestruj",
+        "ad": "Klikając na ten guzik potwierdzasz zapoznanie się",
+        "terms": " z regulaminem dostępu do projektu GLORIA.",
+        "errors": {
+            "server": "Błąd połączenia z serwerem. Przepraszamy za niedogodności.",
+            "email": "Email już istnieje",
+            "unknown": "Nieznany błąd",
+            "password": "Hasło jest niepoprawne",
+            "match": "Hasło nie jest takie samo",
+            "alias": "Już istnieje taki użytkownik",
+            "inv-email": "Email jest niepoprawny"
+        },
+        "success": "Rejestracja zakończona sukcesem! Sprawdź swoją skrzynkę aby uruchomić konto GLORIA."
+    },
+    "reset": {
+        "title": "Zresetuj swoje konto GLORIA",
+        "intro": "Jeśli zapomniałeś swoje hasło możemy przesłać Tobie nowe. Proszę podaj adres jaki wpisałeś przy rejestracji do GLORIA.",
+        "button": "Resetuj",
+        "success": "Prośba przyjęta! Aby aktywować nowe hasło sprawdź swoją skrzynkę odbiorczą.",
+        "placeholder": "Email"
+    }
+}

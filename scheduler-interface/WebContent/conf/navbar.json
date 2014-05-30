@@ -1,0 +1,35 @@
+{		
+	"home": {
+		"text": "navbar.titles.home",
+		"href": {
+			"app": "",
+			"path": "/"
+		}
+	},
+	"plans": {
+		"text": "navbar.titles.plans.header",
+		"child": [						
+			{
+				"type": "link",
+				"text": "navbar.titles.plans.new",
+				"href": {
+					"path": "/new"
+				}
+			},
+			{
+				"type": "link",
+				"text": "navbar.titles.plans.active",
+				"href": {
+					"path": "/active"
+				}
+			},			
+			{
+				"type": "link",
+				"text": "navbar.titles.plans.completed",
+				"href": {
+					"path": "/completed"
+				}
+			}
+		]	
+	}
+}

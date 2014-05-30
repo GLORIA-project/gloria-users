@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "discover": "Discover",
+        "learn": "learn",
+        "research": "research",
+        "share": "share",
+        "subtitle": "GLORIA opens the doors of the universe"
+    },
+    "register": {
+        "title": "Join GLORIA",
+        "placeholders": {
+            "alias": "Username",
+            "email": "Email",
+            "password": "Password",
+            "rep-pass": "Repeat password"
+        },
+        "password-res": "At least 6 characters containing upper and lowercase letters and a number.",
+        "button": "Register",
+        "ad": "By clicking the button, you are stating you agree to the",
+        "terms": "terms and conditions of access to GLORIA.",
+        "errors": {
+            "server": "Connection server error. Sorry for the inconvenience.",
+            "email": "Email already exists",
+            "unknown": "Unknown error",
+            "password": "Password is not valid",
+            "match": "Passwords do not match",
+            "alias": "Username already exists",
+            "inv-email": "Email is not valid"
+        },
+        "success": "Registration successful! Check your inbox to activate your account."
+    },
+    "reset": {
+        "title": "Reset your account",
+        "intro": "If you forgot your password we can send you a new one. All we need is to know the email address with which you registered on GLORIA.",
+        "button": "Reset",
+        "success": "Request received! Check your inbox to activate your new password.",
+        "placeholder": "Email"
+    }
+}

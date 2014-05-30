@@ -1,0 +1,25 @@
+{
+    "header": "Twoja rezerwacja",
+    "intro": {
+        "p1": "Wszystkie zamówione przez Ciebie przedziały czasowe wygasły. Pamiętaj, że zarezerwowany przedział czasowy może być wykorzystany jednie i wyłącznie przez Ciebie. W sumie możesz wykonać nie więcej niż 2 rezerwacje, przy czym obserwacje nie mogą mieć miejsce jednocześnie!",
+        "p2": "Ten panel umożliwia na zarządzanie Twoimi rezerwacjami. Możesz je zobaczyć, anulować, a gdy są już dostępne, skorzystać z eksperymentu i kontrolować teleskop. Aby zobaczyć wszystkie opcje po prostu kliknij na swoją rezerwację. Pamiętaj aby zanotować datę i czas swoich obserwacji. Zła pogoda może zakłócić lub umożliwić jej wykonanie."
+    },
+    "loading": "Wczytuję",
+    "nores": "Nie posiadasz żadnych rezerwacji oczekujących na realizację. Przejdź dalej by zarezerwować teleskop.",
+    "here": "tutaj",
+    "go": "Rezerwuj",
+    "cancel": "Anuluj",
+    "refresh": "Loading",
+    "error": "Telescope problem",
+    "table": {
+        "experiment": "Eksperyment",
+        "begin": "Rozpocznij",
+        "end": "Zakończ",
+        "telescopes": "Teleskopy",
+        "user": "User"
+    },
+    "status": "Current status",
+    "mount": "Mount",
+    "dome": "Dome",
+    "weather": "Weather"
+}

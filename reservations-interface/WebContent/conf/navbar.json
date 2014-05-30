@@ -1,0 +1,52 @@
+{		
+	"home": {
+		"text": "navbar.titles.home",
+		"href": {
+			"app": "",
+			"path": "/"
+		}
+	},
+	"experiments": {
+		"text": "navbar.titles.experiments.header",
+		"child": [			
+			{
+				"type": "header",
+				"text": "navbar.titles.experiments.reservations.header"			
+			},
+			{
+				"type": "link",
+				"text": "navbar.titles.experiments.reservations.new",
+				"href": {
+					"path": "/new"
+				}
+			},
+			{
+				"type": "link",
+				"text": "navbar.titles.experiments.reservations.pending",
+				"href": {
+					"path": "/pending"
+				}
+			}		
+		]	
+	},
+	"images": {
+		"text": "navbar.titles.images.header",
+		"href": {
+			"app": "",
+			"path": "/images"
+		}	
+	},
+	"profile": {
+		"text": "navbar.titles.profile.header",
+		"href": {
+			"app": "",
+			"path": "/profile"
+		}	
+	},
+	"issues": {
+		"text": "navbar.titles.issues.header",
+		"href": {
+			"path": "/issues"
+		}
+	}
+}

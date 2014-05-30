@@ -1,0 +1,60 @@
+{
+    "section1": {
+        "title": "Vous devriez savoir...",
+        "text": "Que le projet GLORIA est toujours dans les premières étapes de son développement. Nous sommes une petite équipe multidisciplinaire d'astronomes, informaticiens, physiciens, artistes, qui partageons une vision commune qui est d'apporter le ciel dans votre maison, école, laboratoire."
+    },
+    "section2": {
+        "title": "Notre but",
+        "text": "Nous voulons que GLORIA devienne un outil de choix pour l'enseignement et la recherche en astronomie. C'est un but ambitieux et nous savons que la route est encore longue. Notre premier accomplissement est de fournir un ensemble d'expériences pour que vous puissiez tester nos télescopes et aider les chercheurs par l'analyse d'images."
+    },
+    "section3": {
+        "title": "Que pouvez-vous faire?",
+        "paragraph1": "L'outil de base pour la recherche et l'enseignement est l'expérience. Il y a deux types d'expériences dans GLORIA : celles qui fournissent de nouvelles images (`en-ligne') et celles qui analysent ces images (`hors-ligne').",
+        "paragraph2": "Actuellement, nous offrons quatre expériences différentes que nous voudrions améliorer avec votre aide. Profitez-en!",
+        "experiments": {
+            "solar": {
+                "title": "Expérience solaire",
+                "desc": "Explorez le soleil et ses taches. Prenez des images pour contribuer à la mesure de l'activité solaire."
+            },
+            "night": {
+                "title": "Expérience nocturne",
+                "desc": "Observez le ciel nocturne. Les planètes, les étoiles, les galaxies et les astéroîdes vous attendent."
+            },
+            "pspace": {
+                "title": "Espace personnel",
+                "desc": "Choisissez un événement important de votre vie et observez le ciel comme il était à ce moment",
+                "wolf": {
+                    "title": "Activité solaire",
+                    "desc": "Analysez les taches solaires sur votre terminal Android et contribuez à la mesure de l'activité solaire."
+                },
+                "luiza": {
+                    "title": "Étoiles variables",
+                    "desc": "Sélectionnez des étoiles et observez leur courbe de lumière."
+                }
+            }
+        }
+    },
+    "widgets": {
+        "loading": "Chargement",
+        "excl": "Ai!",
+        "noimg": "Pas d'image trouvée",
+        "community": {
+            "title": "Imagespubliques",
+            "slide": {
+                "title": "Image @{p1}@",
+                "date": "@{p1}@"
+            }
+        },
+        "user": {
+            "title": "Vosimages",
+            "slide": {
+                "title": "Image @{p1}@",
+                "date": "@{p1}@"
+            }
+        },
+        "telescopes": {
+            "title": "Nostélescopes",
+            "ad": "Uneplusgrandecarte"
+        }
+    }
+}

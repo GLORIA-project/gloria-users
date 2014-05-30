@@ -1,0 +1,51 @@
+{
+	"header" : "Solicita una observación",
+	"intro": "Queremos ofrecerte la posibilidad de solicitar observaciones a nuestra red de telescopios, de forma que puedas conseguir lo antes posible una imagen del objeto que quieras. Lo único que te pedimos es que nos digas qué quieres observar y nosotros buscaremos el telescopio más apropiado.",
+	"phases": {
+		"one": {
+			"header": "1. Elige un objeto",
+			"objects" : {
+				"M1": {
+					"name": "M1",
+					"desc": "Nebulosa del Cangrejo"
+				},
+				"M8": {
+					"name": "M8",
+					"desc": "Nebulosa de la Laguna"
+				},
+				"NGC891": {
+					"name": "NGC891",
+					"desc": "Galaxia espiral"
+				},
+				"M45": {
+					"name": "M45",
+					"desc": "Pléyades"
+				},
+				"NGC1499": {
+					"name": "NGC1499",
+					"desc": "Nebulosa California"
+				},
+				"jupiter": {
+					"name": "Júpiter",
+					"desc": "Planeta"
+				},
+				"M31": {
+					"name": "M31",
+					"desc": "Andrómeda"
+				},
+				"NGC278": {
+					"name": "NGC278",
+					"desc": "Galaxia espiral"
+				}
+			}
+		},
+		"two": {
+			"header": "2. Confirma la observación",
+			"expl": "Cuando confirmas una observación estás solicitando a GLORIA que encuentre un telescopio de la red para tomar una imagen para ti. Si ningún telescopio puede conseguir tu imagen en un plazo de 3 días, el plan será descartado. Puedes acumular un máximo de 5 planes activos, por lo que te recomendamos que elijas bien antes de confirmar.",
+			"limit": "Has alcanzado el máximo número permitido de planes activos.",
+			"success": "La observación ha sido aceptada. Echa un vistazo",
+			"here": "aquí",
+			"confirm": "Confirmar"
+		}
+	}
+}

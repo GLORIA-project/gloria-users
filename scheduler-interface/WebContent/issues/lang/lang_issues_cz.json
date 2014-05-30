@@ -1,0 +1,13 @@
+{
+	"header": "Softwarové problémy",
+	"intro": "Chceme s vámi sdílet seznam problémů, které se snažíme řešit a zlepšení, na kterých pracujeme. K tomu využíváme možností služby GitHu.",
+	"scope": "Rezervace je program, který umožňuje žádat o pozorovací čas a spravovat rezervace. Zde uvedené nálezy se vzrahují k obsahu tohozo projektu.",
+	"bugs": "Chyby",
+	"none": "Žádné nevyřešené problémy",
+	"enhancements": "Vylepšení",
+	"contribute": {
+		"header": "Chcete se podílet?",
+		"pre": "Navštivte náš GitHub zapojte se do řešení",
+		"post": " nahlášených problémů! Abyste mohli přispívat, musíte mít GitHub účet. Po přihlášení pak budete mít možnost hlásit problémy, komentovat a pomáhat nám zlepšovat projekt GLORIA."
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"titles" : {
+		"home": "Домой",
+		"experiments": {
+			"header": "Эксперименты",
+			"online": {
+				"header": "Онлайн",
+				"solar" : "Солнечный"
+			},
+			"reservations" : {
+				"header": "БРОНИРОВАНИЯ",
+				"new": "Новое",
+				"pending": "На рассмотрении"
+			}
+		},
+		"images": {
+			"header": "Изображения"
+		},
+        "profile": {
+            "header": "Profile"
+        },
+        "issues": {
+            "header": "Issues"
+        }
+	}
+}

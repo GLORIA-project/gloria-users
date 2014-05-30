@@ -1,0 +1,35 @@
+{
+	"test": {
+		"path": "/templates/experiments/teleoperation/test",
+		"html": "templates/experiments/teleoperation/parent.html",
+		"js": [
+			"templates/experiments/teleoperation/main.js"
+		]
+	},
+	"generic": {
+		"path": "/templates/generic",
+		"html": "templates/generic/parent.html",
+		"js": [
+			"templates/generic/main.js"
+		]
+	},
+	"wrong": {
+		"type": "wrong-path",
+		"visibility": "public",
+		"path": "/wrong",
+		"html": "toolbox/html/wrong.html",
+		"js": []		
+	},
+	"main": {
+		"type": "main",
+		"path": "/",
+		"html": "toolbox/html/main.html",
+		"js": []		
+	},
+	"legal": {
+		"visibility": "public",
+		"path": "/legal",
+		"html": "toolbox/html/legal.html",
+		"js": []
+	}
+}

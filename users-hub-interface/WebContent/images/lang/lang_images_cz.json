@@ -1,0 +1,11 @@
+{
+    "header": "Album snímků",
+    "slide": {
+        "title": "@{p1}@ snímek",
+        "date": "@{p1}@"
+    },
+    "intro": "Tento nástroj vám umožní prohlédnout si snímky pořízené daný den komunitou. Použijte kalendář a projděte si náhledy.",
+    "excl": "Oops!",
+    "noimg": "Nenalezeny žádné snímky pro tento den",
+    "loading": "Nahrávám"
+}

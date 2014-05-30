@@ -1,0 +1,60 @@
+{
+	"section1": {
+		"title": "Devi sapere che...",
+		"text": "Il progetto GLORIA è ancora nelle prime fasi di sviluppo. Siamo un gruppo piccolo e multidisciplinare (astronomi, informatici, fisici ...), e abbiamo il grande sogno che tutte le nostre idee diventino realtà."
+	},
+	"section2": {
+		"title": "Il nostro obiettivo",
+		"text": "Vogliamo che GLORIA diventi lo strumento principalmente scelto per l'apprendimento e la ricerca in astronomia. Si tratta di un obiettivo ambizioso e sappiamo che la strada da percorrere è lunga. Il nostro primo traguardo è quello di fornire una serie di esperimenti che permettano agli utenti di utilizzare i nostri telescopi e di aiutare la ricerca analizzando le immagini acquisite."
+	},
+	"section3": {
+		"title": "Che cosa puoi fare?",
+		"paragraph1": "Lo strumento di base per l'apprendimento e la ricerca è l'esperimento. In GLORIA abbiamo due tipi di esperimenti: quelli che servono per acquisire immagini -online- e quelli che le analizzano -offline-.",
+		"paragraph2": "Attualmente offriamo quattro diversi esperimenti, che potranno funzionare sempre meglio con il vostro aiuto. Speriamo che vi piacciano.",
+		"experiments" : {
+			"solar": {
+				"title": "Esperimento sul Sole",
+				"desc": "Esplora il Sole e le sue macchie. Prendi delle immagini del Sole per aiutarci nella misura dell'attività solare."
+			},
+			"night": {
+				"title": "Esperimento notturno",
+				"desc": "Guarda il cielo durante la notte. Stelle, galassie ed asteroidi stanno aspettando."
+			},
+			"pspace": {
+				"title": "Personal space",
+				"desc": "Seleziona un evento per localizzare la regione di cielo che in quel preciso momento e luogo era sopra la tua testa." 
+			},
+			"wolf": {
+				"title": "Attività Solare",
+				"desc": "Analizza le macchie solari con il tuo Adroid e contribuisci alla misura dell'attività solare."
+			},
+            "luiza": {
+                "title": "Variable stars",
+                "desc": "View the light curve of a selected star."
+            }
+		}
+	},
+	"widgets": {
+		"loading": "Caricamento in corso",
+		"excl": "Oops!",
+		"noimg": "Nessuna immagine trovata",		
+		"community": {
+			"title": "Immagini della comunità",
+			"slide": {
+				"title": "@{p1}@ image",
+				"date": "@{p1}@"
+			}
+		},
+		"user": {
+			"title": "Le tue immagini",
+			"slide": {
+				"title": "@{p1}@ image",
+				"date": "@{p1}@"
+			}
+		},
+		"telescopes": {
+			"title": "I nostri telescopi",
+			"ad": "Mappa più estesa"
+		}
+	}
+}

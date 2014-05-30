@@ -1,0 +1,41 @@
+{			
+	"main": {
+		"type": "main",
+		"path": "/",
+		"html": "main/html/content.html",
+		"js": ["main/js/main.js", "main/js/jquery.barousel.js"]		
+	},
+	"images": {
+		"path": "/images",
+		"html": "images/html/content.html",
+		"js": ["images/js/images.js", "main/js/jquery.barousel.js", "images/js/datepicker.js", "images/js/jquery.elevatezoom.js"]		
+	},
+	"welcome": {
+		"visibility": "only-public",
+		"type": "welcome",
+		"path": "/welcome",
+		"html": "welcome/html/content.html",
+		"js": ["welcome/js/welcome.js"]
+	},
+	"legal": {
+		"visibility": "public",
+		"path": "/legal",
+		"html": "/gatool/toolbox/html/legal.html",
+		"js": []
+	},
+	"wrong": {
+		"type": "wrong-path",
+		"path": "/welcome"		
+	},
+	"profile": {
+		"path": "/profile",
+		"html": "profile/html/content.html",
+		"js": ["profile/js/profile.js"]		
+	},
+	"issues": {
+		"path": "/issues",
+		"html": "issues/html/content.html",
+		"js": ["issues/js/issues.js", "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-collapse.js"],
+		"visibility": "ADMIN"		
+	}
+}

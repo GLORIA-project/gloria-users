@@ -1,0 +1,64 @@
+{
+    "header": "Effectuez une réservation",
+    "intro": "En vue d'utiliser le temps d'observation d'un télescope, vous devez effectuer une réservation. Ensuite, quand viendra le moment, le télescope sera à vous! Le responsable de chaque télescope décident de la disponibilité de leur instrument. Nous allouons alors des intervalles de 15 minutes durant le temps mis à notre disposition.",
+    "phases": {
+        "one": {
+            "header": "1. Choisissez une expérience",
+            "experiments": {
+                "solar": {
+                    "name": "Expérience solaire",
+                    "desc": "Explore le soleil et ses taches"
+                },
+                "night": {
+                    "name": "Expérience nocturne",
+                    "desc": "Observez le ciel nocturne"
+                }
+            }
+        },
+        "two": {
+            "header": "2. Sélectionnez un télescope",
+            "telescopes": {
+                "tads": {
+                    "name": "TADs",
+                    "desc": "Tenerife, Espagne (IAC)"
+                },
+                "bart": {
+                    "name": "BART",
+                    "desc": "Ondrejov, République Tchèque (AUAV)"
+                }
+            }
+        },
+        "three": {
+            "header": "3. Choisissez une date",
+            "p1": "Quand vous avez choisi une expérience et un télescope, l'étape suivante est de choisir le jour de votre expérience.",
+            "p2": "Pour permettre à tous de recevoir du temps d'observation, un maximum de 2 réservations pourront être effectuées par semaine.",
+            "p3": "Cliquez sur un des jours disponibles pour continuer."
+        },
+        "four": {
+            "header": "4. Choisissez une tranche de temps",
+            "p1": "Vous trouverz sur la gauche les périodes encore disponibles pour le jour sélectionné. Cliquez sur l'une d'elle pour afficher le résumé de votre réservation.",
+            "p2": "Si tout est correct, vous n'avez plus qu'à envoyez la demande et attendre la confirmation",
+            "loading": "Chargement",
+            "noslot": "Il n'y a pas de Pèriode d'observation disponible ce jour",
+            "notime": "Vous avez atteint votre limite de temps d'observation",
+            "done": "Votre nouvelle réservation a été acceptée, vérifiez-la",
+            "here": "ici",
+            "summary": {
+                "title": "Résumé de la réservation",
+                "what": {
+                    "title": "Quoi?",
+                    "text": "Vous essayez de réserver du temps pour utiliser @{p1}@ avec l'expérience @{p2}@."
+                },
+                "when": {
+                    "title": "Quand?",
+                    "text": "Demande de temps entre @{p1}@ TU et @{p2}@ TU."
+                },
+                "request": "Demande"
+            },
+            "table": {
+                "begin": "Début",
+                "end": "Fin"
+            }
+        }
+    }
+}

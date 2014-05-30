@@ -1,0 +1,84 @@
+{
+    "header": "Vytvořte rezervaci",
+    "intro": "Pro použití dalekohledu je třeba rezervovat pozorovací čas, během kterého máte dalekohled sám(a) pro sebe. Alokují se 15 minutové intervaly z celkového času, který nastavuje vlastník dalekohledu.",
+    "phases": {
+        "one": {
+            "header": "1. Vyberte experiment",
+            "experiments": {
+                "solar": {
+                    "name": "Sluneční experiment",
+                    "desc": "Prozkoumejte Slunce a jeho skvrny"
+                },
+                "night": {
+                    "name": "Noční experiment",
+                    "desc": "Pozorujte noční oblohu"
+                }
+            }
+        },
+        "two": {
+            "header": "2. Vyberte dalekohled",
+            "telescopes": {
+                "tads": {
+                    "name": "TADs",
+                    "desc": "Tenerife, Španělsko (IAC)"
+                },
+                "bart": {
+                    "name": "BART",
+                    "desc": "Ondřejov, Česká republika (AUAV)"
+                },
+                "b1a": {
+                    "name": "BOOTES-1A",
+                    "desc": "Andalusie, Španělsko (CSIC)"
+                },
+                "b1b": {
+                    "name": "BOOTES-1B",
+                    "desc": "Andalusie, Španělsko (CSIC)"
+                },
+                "b2": {
+                    "name": "BOOTES-2",
+                    "desc": "Andalusie, Španělsko (CSIC)"
+                },
+                "b3": {
+                    "name": "BOOTES-3",
+                    "desc": "Nový Zéland (CSIC)"
+                },
+                "d50": {
+                    "name": "D50",
+                    "desc": "Ondrejov, Czech Republic (AUAV)"
+                }
+            }
+        },
+        "three": {
+            "header": "3. Vyberte datum",
+            "p1": "Když máte vybraný experiment a dalekohled, následuje výběr konkrétního dne, kdy chcete experiment uskutečnit.",
+            "p2": "Z důvodu spravedlivého využití pozorovacího času je stanoven maximální počet 2 rezervací běhen jednoho týdne. Časem se toto omezení může změnit.",
+            "p3": "Pokračujte kliknutím na jeden z dostupných dní."
+        },
+        "four": {
+            "header": "4. Vyberte časový interval",
+            "p1": "Nalevo budou zobrazeny časové intervaly dostupné pro vybraný den. Kliknutím na jeden z nich zobrazíte přehled vašich rezervací.",
+            "p2": "Pokud je všechno v pořádku, odešlete žádost a počkejte na potvrzení.",
+            "loading": "Nahrávám",
+            "noslot": "Pro tento ten není dostupný žádný časový interval",
+            "notime": "Dosáhl(a) jste maxima vašeho pozorovacího času",
+            "done": "Vaše nová rezervace byla akceptována. Můžete ověřit",
+            "here": "zde",
+            "summary": {
+                "title": "Přehled rezervací",
+                "what": {
+                    "title": "Co?",
+                    "text": "Pokoušíte se rezervovat experiment @{p2}@ na dalekohledu @{p1}@."
+                },
+                "when": {
+                    "title": "Kdy?",
+                    "text": "Požadujete čas mezi @{p1}@ UT a @{p2}@ UT."
+                },
+                "request": "Požadavek"
+            },
+            "table": {
+                "begin": "Začátek",
+                "end": "Konec"
+            }
+        }
+    }
+}

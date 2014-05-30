@@ -1,0 +1,60 @@
+{
+    "section1": {
+        "title": "You should know...",
+        "text": "That the GLORIA project is still at an early stage of development. We are a small and multidisciplinary team (astronomers, computer scientists, physicists, artists...) sharing a common vision to bring the sky into your home, school or lab."
+    },
+    "section2": {
+        "title": "Our goal",
+        "text": "We want GLORIA to become the tool of choice for learning and research in astronomy. It is an ambitious goal and we know that there is a long road ahead. Our first milestone is to provide a set of experiments so you can test our telescopes and help researchers by doing image analysis."
+    },
+    "section3": {
+        "title": "What can you do?",
+        "paragraph1": "The basic tool for learning and research is the experiment. In GLORIA we have two types of experiments: ones that take new images (`online') and ones that analyse images (`offline').",
+        "paragraph2": "Currently we offer four different experiments, which we want to improve with your help. Enjoy!",
+        "experiments": {
+            "solar": {
+                "title": "Solar experiment",
+                "desc": "Explore the Sun and its spots. Take images to contribute to measurement of solar activity."
+            },
+            "night": {
+                "title": "Night experiment",
+                "desc": "Watch the night sky. Planets, stars, galaxies and asteroids await."
+            },
+            "pspace": {
+                "title": "Personal space",
+                "desc": "Choose an important event in your life and see the sky that was directly overhead at that exact moment."
+            },
+            "wolf": {
+                "title": "Solar activity",
+                "desc": "Analyse sunspots on your Android and contribute to the measurement of solar activity."
+            },
+            "luiza": {
+                "title": "Variable stars",
+                "desc": "Hunt for variable stars in the data from wide field sky observations."
+            }
+        }
+    },
+    "widgets": {
+        "loading": "Loading",
+        "excl": "Oops!",
+        "noimg": "No images found",
+        "community": {
+            "title": "Community images",
+            "slide": {
+                "title": "@{p1}@ image",
+                "date": "@{p1}@"
+            }
+        },
+        "user": {
+            "title": "Your images",
+            "slide": {
+                "title": "@{p1}@ image",
+                "date": "@{p1}@"
+            }
+        },
+        "telescopes": {
+            "title": "Our telescopes",
+            "ad": "A bigger map"
+        }
+    }
+}

@@ -1,0 +1,61 @@
+<link href="new/css/styles.css" rel="stylesheet"></link>
+<link href="issues/css/styles.css" rel="stylesheet"></link>
+<div ng-controller="ActiveController" ng-show="ready">
+	<div class="page-header" style="border: none; margin-bottom: 10px">
+		<div class="row" style="margin-bottom: 0px">
+			<h2 style="margin-left: 18px">{{'active.header'|i18n}}</h2>
+		</div>
+	</div>
+	<div class="container">
+		<p>{{'active.intro'|i18n}}</p>
+		<div style="margin-top:30px">
+			<div class="accordion animate-show" id="accordion1">
+				<div ng-repeat="plan in active" class="accordion-group">
+					<div tooltip-popup-delay="500" tooltip="{{plan.id}}"
+						tooltip-placement="left" class="accordion-heading"
+						style="overflow: hidden">
+						<a style="float: left" class="accordion-toggle"
+							data-toggle="collapse" data-parent="#accordion1"
+							ng-href="#collapse1{{$index}}" target="_self">{{plan.opInfo.description}}</a>
+						<p style="float: right; margin: 0px; padding: 8px">{{plan.publishDate
+							|date: medium}}</p>
+					</div>
+					<div id="collapse1{{$index}}" class="accordion-body collapse in">
+						<div class="accordion-inner">
+							<div class="span2">
+								<p>
+									<strong>Object</strong> {{plan.opInfo.object}}
+								</p>
+							</div>
+							<div class="span2">
+								<p>
+									<strong>State</strong> {{plan.state}}
+								</p>
+							</div>
+							<div class="span">
+								<p>
+									<strong>Telescope</strong> {{plan.rt}}
+								</p>
+							</div>
+							<div class="span">
+								<p>
+									<strong>Exposure time</strong> {{plan.opInfo.exposure}} s
+								</p>
+							</div>
+							<div class="span">
+								<p>
+									<strong>Filter</strong> {{plan.opInfo.filter}}
+								</p>
+							</div>
+							<div align="right" class="span2">
+								<p>
+									<strong>Updated</strong> {{plan.lastDate | date: medium}}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

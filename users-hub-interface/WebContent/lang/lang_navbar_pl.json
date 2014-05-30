@@ -1,0 +1,37 @@
+{
+    "titles": {
+        "home": "Główna",
+        "experiments": {
+            "header": "Eksperymenty",
+            "online": {
+                "header": "ONLINE",
+                "solar": "Dzienne",
+                "night": "Nocne",
+                "scheduler": "Scheduler"
+            },
+            "reservations": {
+                "header": "REZERWACJA",
+                "new": "Nowa",
+                "pending": "Oczekująca"
+            },
+            "offline": {
+                "header": "OFFLINE",
+                "pspace": "Personal space",
+                "wolf": "Aktywność słoneczna",
+                "luiza": "Gwiazdy zmienne"
+            }
+        },
+        "images": {
+            "header": "Zdjęcia"
+        },
+        "telescopes": {
+            "header": "Telescopes"
+        },
+        "profile": {
+            "header": "Profil"
+        },
+        "issues": {
+            "header": "Błędy"
+        }
+    }
+}

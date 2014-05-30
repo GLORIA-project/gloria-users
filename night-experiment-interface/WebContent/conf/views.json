@@ -1,0 +1,24 @@
+{
+	"night": {
+		"type": "main",
+		"path": "/view",
+		"html": "night/html/parent.html",
+		"js": [
+			"night/js/jquery.carouFredSel-6.2.1.js",
+			"night/prettyPhoto/js/jquery.prettyPhoto.js",
+			"http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js",
+			"night/js/main.js",
+			"night/js/night.js",
+			"night/js/opentip/downloads/opentip-jquery.min.js"
+		]
+	},
+	"wrong": {
+		"type": "wrong-path",
+		"path": "/view"
+	},
+	"issues": {
+		"path": "/issues",
+		"html": "issues/html/content.html",
+		"js": ["issues/js/issues.js", "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-collapse.js"]		
+	}
+}

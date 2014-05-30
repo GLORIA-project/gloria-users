@@ -1,0 +1,36 @@
+{
+	"header": "Tu perfil",
+	"intro": "Este es el lugar en el que puedes ver y gestionar tu información personal. Dentro de poco te mostraremos datos acerca de tu contribución en GLORIA y las recompensas que vayas ganando. Mientras tanto, tenemos en cuenta tus actos para que tu mérito sea correspondido.",
+	"update": {
+		"placeholders": {
+			"password": "Nueva contraseña",
+			"rep-pass": "Repetir nueva contraseña"
+		},
+		"password-res": "Al menos 6 caracteres que contengan una mayúscula, una minúscula y un número.",
+		"errors": {
+            "server": "Error de conexión con el servidor. Disculpa las molestias.",
+            "unknown": "Error desconocido",
+            "password": "Contraseña no válida",
+            "match": "Las contraseñas no coinciden"
+        },
+        "success": "¡Solicitud recibida! Echa un vistazo a tu bandeja de entrada para activar tu nueva contraseña.",
+         "button": "Cambiar",
+         "title": "Contraseña"
+	},
+	"avatar": {
+		"title": "Avatar",
+		"ad": "GLORIA se apoya en Gravatar.com para conseguir tu avatar o asignarte uno si aún no lo has creado. Haz click en la imagen si deseas cambiarla."
+	},
+	"about": {
+		"title": "Sobre ti",
+		"ocupation": {
+			"title": "¿A qué te dedicas?",
+			"student": "Soy estudiante",
+			"scientist": "Soy científico",
+			"other": "Hago otras cosas"
+		},
+		"karma": {
+			"title": "Tu Karma"			
+		}
+	}
+}

@@ -1,0 +1,60 @@
+{
+    "section1": {
+        "title": "Co powinieneś wiedzieć...",
+        "text": "Projekt GLORIA jest w dalszym ciągu we wczesnej fazie rozwojowej. Nasz zespół stanowi garstka specjalistów z wielu dziedzin (astronomów, programistów, fizyków, artystów...) dzielących wspólną ideę konieczności przybliżenia nieba w domu i szkole."
+    },
+    "section2": {
+        "title": "Nasz cel",
+        "text": "Chcemy aby GLORIA stała się pełnowartościowym narzędziem pozwalającym na edukację oraz prowadzenie badań astronomicznych. Przed nami stoi jeszcze wiele ambitnych celów. Pierwszym z kroków w ich osiągnięciu jest stworzenie grupy eksperymentów służących do sprawdzenia naszych teleskopów oraz wsparcia badań prowadzonych przez zawodowych astronomów."
+    },
+    "section3": {
+        "title": "Co można z nami robić?",
+        "paragraph1": "Najlepszą metodą dla nauki i badań jest eksperymentowanie. W ramach projektu GLORIA przekazujemy Wam do użycia dwa rodzaje eksperymentów: pierwszy typ pozwala na wykonanie nowych obrazów (`online') zaś drugi typ tylko na ich analizę (`offline').",
+        "paragraph2": "Obecnie udostępniamy cztery różne eksperymenty, które mamy nadzieję poprawić z Waszą pomocą. Bawcie się dobrze!",
+        "experiments": {
+            "solar": {
+                "title": "Eksperyment słoneczny",
+                "desc": "Poznaj Słońce i jego plamy. Wykonaj zdjęcia i pomóż poznać lepiej aktywność słoneczną."
+            },
+            "night": {
+                "title": "Nocne obserwacje",
+                "desc": "Popatrz na niebo w nocy. Czekają tam na Ciebie planety, gwiazdy, galaktyki i planetoidy."
+            },
+            "pspace": {
+                "title": "Personal space",
+                "desc": "Wybierz istotny dla Ciebie moment w życiu i zobacz jak wyglądało niebo nad Twoją głową dokładnie w tej ulotnej chwili."
+            },
+            "wolf": {
+                "title": "Aktywność słoneczna",
+                "desc": "Policz plamy słoneczne z pomocą swojego urządzenia z Androidem i przyczyń się do poznania aktywności słonecznej."
+            },
+            "luiza": {
+                "title": "Gwiazdy zmienne",
+                "desc": "Zobacz krzywą blasku wybranej gwiazdy."
+            }
+        }
+    },
+    "widgets": {
+        "loading": "Ładuję",
+        "excl": "Uuups!",
+        "noimg": "Nie znaleziono zdjęć",
+        "community": {
+            "title": "Zdjęcia społeczności",
+            "slide": {
+                "title": "zdjęcie @{p1}@",
+                "date": "@{p1}@"
+            }
+        },
+        "user": {
+            "title": "Twoje zdjęcia",
+            "slide": {
+                "title": "zdjęcie @{p1}@",
+                "date": "@{p1}@"
+            }
+        },
+        "telescopes": {
+            "title": "Nasze teleskopy",
+            "ad": "Większa mapa"
+        }
+    }
+}

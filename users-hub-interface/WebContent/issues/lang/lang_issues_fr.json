@@ -1,0 +1,16 @@
+{
+	
+	"header": "Problèmes, améliorations du logiciel",
+	"intro": "Nous voudrions partager avec vous la liste des problèmes que nous tentons de résoudre et des améliorations auxquelles nous travaillons. Pour ce faire, nous nous basons sur les services de nos dépôts Github, et particulièrement pour ce site, le projet SolarExperiment.",
+	"scope": "UsersHub est un logiciel qui permet d'accéder aux pages \"Accueil\", \"Images\", \"Profil\" et \"Problèmes\"",
+	"bugs": "Bugs",
+	"none": "Pas de problème actuellement",
+	"loading": "Chargement",
+	"enhancements": "Améliorations",
+	"contribute": {
+		"header": "Vous voulez contribuer?",
+		"pre": "Rendez-vous sur la page Github de notre organisation et impliquez vous dans ",
+		"post": " problèmes de dépôts! Pour pouvoir  contribuer, vous devez avoir un compte. Quand vous serez connecté, vous pourrez ajouter de nouveaux rapports de bug, commentaires, et nous aider à améliorer GLORIA."
+	}
+	
+}

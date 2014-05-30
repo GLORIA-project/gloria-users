@@ -1,0 +1,97 @@
+{		
+	"home": {
+		"text": "navbar.titles.home",
+		"href": {
+			"path": "/"
+		}
+	},
+	"experiments": {
+		"text": "navbar.titles.experiments.header",
+		"child": [			
+			{
+				"type": "header",
+				"text": "navbar.titles.experiments.reservations.header"			
+			},
+			{
+				"type": "link",
+				"text": "navbar.titles.experiments.reservations.new",
+				"href": {
+					"app": "reservations",
+					"path": "/new"
+				}
+			},
+			{
+				"type": "link",
+				"text": "navbar.titles.experiments.reservations.pending",
+				"href": {
+					"app": "reservations",
+					"path": "/pending"
+				}
+			},			
+			{
+				"type": "divider",
+				"visibility": "ADMIN"	
+			},
+			{
+				"type": "header",
+				"text": "navbar.titles.experiments.online.header",
+				"visibility": "ADMIN"			
+			},
+			{
+				"type": "link",
+				"text": "navbar.titles.experiments.online.scheduler",
+				"visibility": "ADMIN",
+				"href": {
+					"app": "scheduler",
+					"path": "/"
+				}
+			},			
+			{
+				"type": "divider"	
+			},
+			{
+				"type": "header",
+				"text": "navbar.titles.experiments.offline.header"			
+			},
+			{
+				"type": "link",
+				"text": "navbar.titles.experiments.offline.pspace",
+				"href": {
+					"url": "http://personal-space.eu"
+				}
+			},
+			{
+				"type": "link",
+				"text": "navbar.titles.experiments.offline.wolf",
+				"href": {
+					"url": "https://play.google.com/store/apps/details?id=com.gloria.offlineexperiments"
+				}
+			},
+			{
+				"type": "link",
+				"text": "navbar.titles.experiments.offline.luiza",
+				"href": {
+					"url": "http://193.0.87.199/luiza/interface/pi-lc-intro.html"
+				}
+			}	
+		]	
+	},
+	"images": {
+		"text": "navbar.titles.images.header",		
+		"href": {
+			"path": "/images"
+		}
+			
+	},"profile": {
+		"text": "navbar.titles.profile.header",
+		"href": {
+			"path": "/profile"
+		}
+	},
+	"issues": {
+		"text": "navbar.titles.issues.header",
+		"href": {
+			"path": "/issues"
+		}
+	}
+}

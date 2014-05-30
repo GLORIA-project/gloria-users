@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>eu.gloria</groupId>
+	<artifactId>gloria-web</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<repositories>
+		<repository>
+			<id>gloria-releases</id>
+			<url>http://saturno.datsi.fi.upm.es:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<repository>
+			<id>gloria-snapshots</id>
+			<url>http://saturno.datsi.fi.upm.es:8081/nexus/content/repositories/snapshots</url>
+		</repository>		
+    </repositories>
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://saturno.datsi.fi.upm.es:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<url>http://saturno.datsi.fi.upm.es:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<site>
+			<id>nexus</id>
+			<url>dav:http://saturno.datsi.fi.upm.es:8081/nexus/content/sites/site/${project.groupId}/${project.artifactId}/${project.version}</url>
+		</site>
+	</distributionManagement>
+	
+	<build>				
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<version>1.1</version>
+				<configuration>
+					<url>${tomcat-url}</url>
+					<server>${tomcat-server}</server>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+				<configuration>
+					<webResources>
+						<resource>
+							<directory>WebContent</directory>
+						</resource>
+					</webResources>
+					<webXml>WebContent/WEB-INF/web.xml</webXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>	
+</project>

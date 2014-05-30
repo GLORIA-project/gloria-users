@@ -1,0 +1,39 @@
+{		
+	"home": {
+		"text": "navbar.titles.home",
+		"href": {
+			"path": "/"
+		}
+	},
+	"experiments": {
+		"text": "navbar.titles.menu.header",
+		"child": [			
+			{
+				"type": "header",
+				"text": "navbar.titles.menu.item.header"			
+			},
+			{
+				"type": "link",
+				"text": "navbar.titles.menu.item.template",
+				"href": {
+					"app": "/"
+				}
+			},
+			{
+				"type": "divider"			
+			}			
+		]	
+	},
+	"generic": {
+		"text": "navbar.titles.generic.header",
+		"child": [			
+			{
+				"type": "link",
+				"text": "navbar.titles.generic.template",
+				"href": {					
+					"path": "/templates/generic"
+				}
+			}			
+		]	
+	}
+}

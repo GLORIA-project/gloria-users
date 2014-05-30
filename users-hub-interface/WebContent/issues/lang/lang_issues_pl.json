@@ -1,0 +1,14 @@
+{
+	"header": "Problemy z oprogramowaniem",
+	"intro": "Napotkaliśmy już na kilka problemów, którym staramy się sprostać i usprawnień nad którymi pracujemy. W szczególności aby ulepszyć stronę projektu UsersHub korzystamy z narzędzia GitHub.",
+	"scope": "UsersHub to program który umożliwia podgląd strony Głównej, Zdjęć, Profile oraz Błędów. Jeśli macie uwagi w tym temacie prosimy o podzielenie się nimi z nami.",
+	"bugs": "Błędy",
+	"none": "Brak zgłoszonych spraw",
+	"loading": "Wczytuję",
+	"enhancements": "Rozszerzenia",
+	"contribute": {
+		"header": "Chcesz pomóc?",
+		"pre": "Przejdź do narzędzia GitHub i pomóż rozwiązać napotkane",
+		"post": " przez innych problemy! Aby wziąć udział w ulepszaniu naszych narzędzi musisz posiadać konto w GitHub. Po zalogowaniu będziesz mógł zgłosić nowy błąd, wziąć udział w dyskusji lub pomóc nam udoskonalać projekt GLORIA."
+	}
+}

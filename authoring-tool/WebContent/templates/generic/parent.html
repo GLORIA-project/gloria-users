@@ -1,0 +1,17 @@
+<!--  Import scripts and css here -->
+<link href="templates/generic/styles.css" rel="stylesheet"></link>
+
+<!-- Experiment container -->
+<div ng-controller="GenericCtrl">
+	<div class="page-header" style="border: none; margin-bottom: 10px">
+		<div class="row" style="margin-bottom: 0px">
+			<h2 class="test" style="margin-left: 18px">{{'generic.header'|i18n}}</h2>
+		</div>
+	</div>
+	<div class="animate-show"
+		!notAuthorized"
+		ng-class="{'transparent': notAuthorized }">
+
+		<div ng-include src="specificHtml"></div>
+	</div>
+</div>

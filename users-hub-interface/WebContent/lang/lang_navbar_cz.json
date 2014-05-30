@@ -1,0 +1,37 @@
+{
+    "titles": {
+        "home": "Domů",
+        "experiments": {
+            "header": "Experimenty",
+            "online": {
+                "header": "ONLINE",
+                "solar": "Sluneční",
+                "night": "Noční",
+                "scheduler": "Scheduler"
+            },
+            "reservations": {
+                "header": "REZERVACE",
+                "new": "Nová",
+                "pending": "Nevyřízené"
+            },
+            "offline": {
+                "header": "OFFLINE",
+                "pspace": "Osobní vesmír",
+                "wolf": "Sluneční aktivita",
+                "luiza": "Proměnné hvězdy"
+            }
+        },
+        "images": {
+            "header": "Snímky"
+        },
+        "telescopes": {
+            "header": "Telescopes"
+        },
+        "profile": {
+            "header": "Profil"
+        },
+        "issues": {
+            "header": "Problémy"
+        }
+    }
+}

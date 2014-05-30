@@ -1,0 +1,26 @@
+{
+	"titles" : {
+		"home": "Accueil",
+		"experiments": {
+			"header": "Expériences",
+			"online": {
+				"header": "En-ligne",
+				"solar" : "Solaire"
+			},
+			"reservations" : {
+				"header": "RÉSERVATIONS",
+				"new": "Nouveau",
+				"pending": "En attente"
+			}
+		},
+		"images": {
+			"header": "Images"
+		},
+        "profile": {
+            "header": "Profil"
+        },
+        "issues": {
+            "header": "Problèmes"
+        }
+	}
+}

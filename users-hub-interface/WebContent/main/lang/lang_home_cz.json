@@ -1,0 +1,60 @@
+{
+    "section1": {
+        "title": "Měli byste vědět...",
+        "text": "že projekt GLORIA je stále v ranné fázi vývoje. Jsme malý a multidiscipliní tým (astronomové, programátoři, fyzikové, umělci, ...), který se chce přinést oblohu do vašich domovů, škol nebo laboratoří."
+    },
+    "section2": {
+        "title": "Náš cíl",
+        "text": "Chceme, aby se GLORIA stala nástrojem pro výuku a výzkum v astronomii. Je to ambiciózní plán a víme, že nás čeká ještě dlouhá cesta. Naším prvním milníkem je zpřístupnění sady experimentů, takže můžete vyzkoušet naše dalekohledy a pomoci vědcům se zpracováním snímků."
+    },
+    "section3": {
+        "title": "Co můžete dělat?",
+        "paragraph1": "Základním nástrojem pro výuku a výzkum je experiment. GLORIA má dva druhy experimentů: online, kde se pořizují nové snímky a offline, kde se pracuje se snímky již pořízenými.",
+        "paragraph2": "V současnosti nabízíme čtyři rozdílné experimenty, které můžeme s vaší pomocí dále zlepšovat. Užijte si je!",
+        "experiments": {
+            "solar": {
+                "title": "Sluneční experiment",
+                "desc": "Prozkoumejte Slunce a jeho skvrny. Pořiďte snímky jako příspěvek k měření solární aktivity."
+            },
+            "night": {
+                "title": "Noční experiment",
+                "desc": "Pozorujte noční oblohu. Planety, hvězdy, galaxie a asteroidy čekají."
+            },
+            "pspace": {
+                "title": "Osobní vesmír",
+                "desc": "Vyberte si důležitou událost ve vašem životě a podívejte se, co se dělo v té chvíli přímo nad vaší hlavou."
+            },
+            "wolf": {
+                "title": "Sluneční aktivita",
+                "desc": "Analyzujte sluneční skvrny na vašem Androidu a přispějte měření aktivity Slunce."
+            },
+            "luiza": {
+                "title": "Proměnné hvězdy",
+                "desc": "Prohlédněte si světelnou křivku vybrané hvězdy."
+            }
+        }
+    },
+    "widgets": {
+        "loading": "Nahrávám",
+        "excl": "Oops!",
+        "noimg": "Nenalezeny žádné snímky",
+        "community": {
+            "title": "Komunitní snímky",
+            "slide": {
+                "title": "@{p1}@ snímek",
+                "date": "@{p1}@"
+            }
+        },
+        "user": {
+            "title": "Vaše snímky",
+            "slide": {
+                "title": "@{p1}@ snímek",
+                "date": "@{p1}@"
+            }
+        },
+        "telescopes": {
+            "title": "Naše dalekohledy",
+            "ad": "Větší mapa"
+        }
+    }
+}

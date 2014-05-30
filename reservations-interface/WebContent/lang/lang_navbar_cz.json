@@ -1,0 +1,26 @@
+{
+	"titles" : {
+		"home": "Úvod",
+		"experiments": {
+			"header": "Experimenty",
+			"online": {
+				"header": "Online",
+				"solar" : "Sluneční"
+			},
+			"reservations" : {
+				"header": "RESERVACE",
+				"new": "Nová",
+				"pending": "Nevyřízené"
+			}
+		},
+		"images": {
+			"header": "Snímky"
+		},
+        "profile": {
+            "header": "Profil"
+        },
+        "issues": {
+            "header": "Problémy"
+        }
+	}
+}

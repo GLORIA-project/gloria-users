@@ -1,0 +1,11 @@
+{
+	"header": "Álbum de imágenes",
+	"slide": {
+		"title": "Imagen del @{p1}@",
+		"date": "@{p1}@" 
+	},
+	"intro": "Esta herramienta te permite ver tantas veces como quieras todas las imágenes tomadas por la comunidad día a día. Símplemente utiliza el calendario y navega por las instantáneas",
+	"excl": "Vaya!",
+	"noimg": "No hay imágenes de ese día",
+	"loading": "Cargando"
+}

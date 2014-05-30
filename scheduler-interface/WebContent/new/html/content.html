@@ -1,0 +1,52 @@
+<link href="new/css/styles.css" rel="stylesheet"></link>
+<div ng-controller="NewObservationController" ng-show="ready">
+	<div class="page-header" style="border: none; margin-bottom: 10px">
+		<div class="row" style="margin-bottom: 0px">
+			<h2 style="margin-left: 18px">{{'new.header'|i18n}}</h2>
+		</div>
+	</div>
+	<div class="container">
+		<p>{{'new.intro'|i18n}}</p>
+		<div>
+			<h3 style="margin-bottom: 15px; margin-top: 20px; font-size: 23px">{{'new.phases.one.header'|i18n}}</h3>
+			<ul class="thumbnails">
+				<li ng-repeat="object in objects" class="span3">
+					<div class="experiment-banner pcard" ng-style="object.style"
+						ng-click="objectClicked(object.id)"
+						ng-class="{highCard: objectSelected == object.id}">
+						<h4 style="margin-top: 0px">{{'new.phases.one.objects.' +
+							object.id + '.name'|i18n}}</h4>
+						{{'new.phases.one.objects.' + object.id + '.desc'|i18n}}
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div ng-show="objectSelected != null" class="animate-show">
+			<h3 style="margin-bottom: 15px; font-size: 23px">{{'new.phases.two.header'|i18n}}</h3>
+			<div>
+				<p>{{'new.phases.two.expl'|i18n}}</p>
+			</div>
+			<div style="margin-top: 15px" align="center">
+				<button style="padding: 10px; padding-left: 15; padding-right: 15px"
+					class="btn btn-reg" ng-click="request()">{{'new.phases.two.confirm'|i18n}}</button>
+			</div>
+			<div align="center"
+				style="padding-top: 20px; font-size: 0.9em; line-height: 15px; color: #D3AF7B"
+				class="animate-show" ng-show="requestSuccess">
+
+				<div style="padding-left: 20px">
+					<i class="icon-ok"
+						style="background-color: #D3AF7B; margin-right: 5px; margin-top: 2px"></i>{{'new.phases.two.success'|i18n}}<a style="color: #D3AF7B" href="#/active"> {{'new.phases.two.here'|i18n}}</a>
+				</div>
+			</div>
+			<div align="center"
+				style="padding-top: 20px; font-size: 0.9em; line-height: 15px; color: #D3AF7B"
+				class="animate-show" ng-show="requestLimit">
+				<div style="padding-left: 20px">
+					<i class="icon-remove"
+						style="background-color: #D3AF7B; margin-right: 5px; margin-top: 2px"></i>{{'new.phases.two.limit'|i18n}}					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

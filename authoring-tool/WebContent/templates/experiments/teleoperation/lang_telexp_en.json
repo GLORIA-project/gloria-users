@@ -1,0 +1,7 @@
+{
+	"header": "Experiment template",
+	"content": {
+		"ind": "The content of your teleoperation interface here.",
+		"rid": "The reservation id is"
+	}
+}

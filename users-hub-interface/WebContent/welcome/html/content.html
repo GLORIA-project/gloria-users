@@ -1,0 +1,126 @@
+<div class="animate-show" ng-controller="WelcomeUserController" style="height: 650px"
+	ng-show="ready" class="container">
+	<div class="animate-show"
+		style="color: white; float: left; margin-right: 0px; width: 56%; padding-bottom: 300px; margin-top: 100px; background-position: center; height: 160px; background-image: url(welcome/img/back-home.jpg)">
+		<h1
+			style="margin-left: 25px; line-height: 50px; font-size: 50px; margin-top: 30px">
+			{{'welcome.brand.discover'|i18n}},<br>{{'welcome.brand.learn'|i18n}},<br>{{'welcome.brand.research'|i18n}},<br>{{'welcome.brand.share'|i18n}}.
+		</h1>
+		<h4 style="margin-top: 185px; margin-left: 25px">{{'welcome.brand.subtitle'|i18n}}.</h4>
+	</div>
+	<div
+		style="position: relative; float: left; margin-left: 0px; width: 44%; padding-bottom: 300px; margin-top: 100px; background-position: center; height: 160px; background-color: #111111">
+
+		<div ng-switch on="option">
+			<div ng-switch-when="register" class="reveal-animation"
+				style="padding-right: 25px; overflow: hidden; height: 100%">
+				<h2 style="margin-left: 35px; margin-top: 40px">{{'welcome.register.title'|i18n}}</h2>
+				<div style="margin-left: 35px; margin-top: 35px">
+					<form ng-submit="newUser()">
+						<fieldset>
+							<input style="display: block; width: 60%"
+								ng-model="register.alias" name="username" type="text"
+								placeholder="{{'welcome.register.placeholders.alias'|i18n}}"
+								ng-style="register.styles.alias" /> <input
+								style="display: block; width: 88%" ng-model="register.email"
+								name="email" type="text"
+								placeholder="{{'welcome.register.placeholders.email'|i18n}}"
+								ng-style="register.styles.email" />
+							<div style="overflow: hidden">
+								<div style="width: 65%; float: left">
+									<input class="span3" ng-model="register.password"
+										name="password" type="password"
+										placeholder="{{'welcome.register.placeholders.password'|i18n}}"
+										ng-style="register.styles.password" /> <input class="span3"
+										style="display: block;" ng-model="register.repPassword"
+										name="password" type="password"
+										placeholder="{{'welcome.register.placeholders.rep-pass'|i18n}}"
+										ng-style="register.styles.password" />
+								</div>
+								<label
+									style="color: #D3AF7B; display: inline-block; cursor: default; vertical-align: middle; padding-bottom: 8px; font-size: 85%; width: 35%; line-height: 14px; margin-top: 0px"
+									ng-style="register.styles.password">{{'welcome.register.password-res'|i18n}}</label>
+							</div>
+
+							<div
+								style="min-height: 50px; height: auto; margin-top: 10px; color: #D3AF7B; line-height: 14px; font-size: 85%;">
+								<div class="animate-show" ng-show="register.fault.on">
+									<i class="icon-remove"
+										style="float: left; background-color: rgb(255, 82, 0); margin-right: 5px; margin-top: -1px"></i>
+									<div ng-switch on="register.fault.reason"
+										style="padding-left: 20px">
+										<p ng-switch-when="server">{{'welcome.register.errors.server'|i18n}}</p>
+										<p ng-switch-when="inv-email">{{'welcome.register.errors.inv-email'|i18n}}</p>
+										<p ng-switch-when="password">{{'welcome.register.errors.password'|i18n}}</p>
+										<p ng-switch-when="match">{{'welcome.register.errors.match'|i18n}}</p>
+										<p ng-switch-when="unknown">{{'welcome.register.errors.unknown'|i18n}}</p>
+										<p ng-switch-when="alias">{{'welcome.register.errors.alias'|i18n}}</p>
+										<p ng-switch-when="email">{{'welcome.register.errors.email'|i18n}}</p>
+									</div>
+								</div>
+								<div class="animate-show" ng-show="register.success">
+									<i class="icon-ok"
+										style="float: left; background-color: #D3AF7B; margin-right: 5px; margin-top: -1px"></i>
+									<p style="padding-left: 20px">{{'welcome.register.success'|i18n}}.</p>
+								</div>
+							</div>
+
+							<button class="btn btn-reg"
+								style="width: 50%; position: absolute; bottom: 70px"
+								type="submit">
+								<strong>{{'welcome.register.button'|i18n}}</strong>
+							</button>
+							<p
+								style="display: block; margin-top: 15px; color: #D3AF7B; line-height: 14px; font-size: 85%; position: absolute; bottom: 0px; margin-bottom: 25px; padding-right: 25px">
+								{{'welcome.register.ad'|i18n}}<a href="#/legal"
+									style="color: #D3AF7B;"> {{'welcome.register.terms'|i18n}}</a>
+							</p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div ng-switch-when="reset" style="padding-right: 25px"
+				class="reveal-animation">
+				<h2 style="margin-left: 35px; margin-top: 40px">{{'welcome.reset.title'|i18n}}</h2>
+				<div style="margin-left: 35px; margin-top: 35px">
+					<div>
+						<p>{{'welcome.reset.intro'|i18n}}.</p>
+						<form ng-submit="resetUser()" style="margin-top: 30px">
+							<fieldset>
+								<input class="span3" ng-model="reset.email" name="email"
+									type="text" placeholder="{{'welcome.reset.placeholder'|i18n}}"
+									style="float: left; margin-right: 10px"
+									ng-style="reset.styles.email" />
+								<button
+									style="margin-top: 0px; min-height: 0px; font-size: 16px"
+									class="btn btn-reg" type="submit">
+									<strong>{{'welcome.reset.button'|i18n}}</strong>
+								</button>
+
+								<div
+									style="height: 50px; margin-top: 20px; color: #D3AF7B; line-height: 14px; font-size: 85%;">
+									<div class="animate-show" ng-show="reset.fault.on">
+										<i class="icon-remove"
+											style="float: left; background-color: rgb(255, 82, 0); margin-right: 5px; margin-top: -1px"></i>
+										<div ng-switch on="reset.fault.reason"
+											style="padding-left: 20px">
+											<p ng-switch-when="server">{{'welcome.register.errors.server'|i18n}}</p>
+											<p ng-switch-when="inv-email">{{'welcome.register.errors.email'|i18n}}</p>
+											<p ng-switch-when="unknown">{{'welcome.register.errors.unknown'|i18n}}</p>
+										</div>
+									</div>
+									<div class="animate-show" ng-show="reset.success">
+										<i class="icon-ok"
+											style="float: left; background-color: #D3AF7B; margin-right: 5px; margin-top: -1px"></i>
+										<p style="padding-left: 20px">{{'welcome.reset.success'|i18n}}.</p>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,26 @@
+{
+    "header": "Votre réservation",
+    "intro": {
+        "p1": "Toutes les périodes d'observation qui vous ont été octroyées feront partie de vos réservations en attente jusqu'à ce qu'elles expirent. Sachez que ce temps vous est personellement dédié. Vous pouvez effectuer un maximum de deux réservations par semaine, mais elles peuvent être simultanées.",
+        "p2": "Ce panneau vous permet de gérer vos réservations. Vous pouvez les afficher ou les supprimer, et dès qu'elles sont actives, accéder à l'expérience et controler le télescope. Pour ce faire, cliquez simplement sur la réservation qui vous intéresse pour revoir vos options. Il est important que vous sachiez que d'éventuelles mauvaises conditions météo pendant votre temps imparti empêcheront le fonctionnement du télescope."
+    
+    },
+    "loading": "Chargement",
+    "nores": "Vous n'avez pas encore de réservation en cours.",
+    "here": "ici",
+    "go": "Allez",
+    "cancel": "Annuler",
+    "refresh": "Loading",
+    "error": "Telescope problem",
+    "table": {
+        "experiment": "Expérience",
+        "begin": "Début",
+        "end": "Fin",
+        "telescopes": "Télescopes",
+        "user": "User"
+    },
+    "status": "Current status",
+    "mount": "Mount",
+    "dome": "Dome",
+    "weather": "Weather"
+}

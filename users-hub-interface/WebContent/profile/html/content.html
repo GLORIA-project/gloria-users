@@ -1,0 +1,85 @@
+<link href="profile/css/styles.css" rel="stylesheet"></link>
+<div ng-controller="ProfileController" ng-show="ready && about.infoLoaded">
+	<div class="page-header" style="border: none; margin-bottom: 10px">
+		<div class="row" style="margin-bottom: 0px">
+			<h2 style="margin-left: 18px">{{'profile.header' | i18n}}</h2>
+		</div>
+	</div>
+	<div style="margin-bottom: 20px">
+		<p>{{'profile.intro'|i18n}}</p>
+		<p></p>
+	</div>
+	<div style="margin-left: 0px" class="span6">
+		<h3>{{'profile.avatar.title'|i18n}}</h3>
+		<div gravatar-image data-email="login.finalEmail" data-size="100"
+			data-href="http://gravatar.com/emails"
+			style="float: left; margin-right: 20px"></div>
+		<div style="padding-right: 50px" ng-bind-html="avatar.adHtml"></div>
+	</div>
+	<div class="span6">
+		<h3>{{'profile.update.title'|i18n}}</h3>
+		<form>
+			<fieldset>
+				<div style="overflow: hidden">
+					<div style="width: 50%; float: left">
+						<input class="span3" ng-model="update.password" name="password"
+							type="password"
+							placeholder="{{'profile.update.placeholders.password'|i18n}}"
+							ng-style="update.styles.password" /> <input class="span3"
+							style="display: block;" ng-model="update.repPassword"
+							name="password" type="password"
+							placeholder="{{'profile.update.placeholders.rep-pass'|i18n}}"
+							ng-style="update.styles.password" />
+					</div>
+					<label
+						style="color: #D3AF7B; display: inline-block; cursor: default; vertical-align: middle; padding-bottom: 8px; font-size: 85%; width: 35%; line-height: 14px; margin-top: 15px; margin-left: 5px"
+						ng-style="update.styles.password">{{'profile.update.password-res'|i18n}}</label>
+				</div>
+				<button ng-click="updatePassword()" style="float: left"
+					class="btn btn-info" type="submit">
+					<strong>{{'profile.update.button'|i18n}}</strong>
+				</button>
+				<div
+					style="height: 40px; margin-top: 10px; color: #D3AF7B; line-height: 14px; font-size: 85%; float: left; padding-left: 15px; max-width: 280px">
+					<div class="animate-show" ng-show="update.fault.on">
+						<i class="icon-remove"
+							style="float: left; background-color: rgb(255, 82, 0); margin-right: 5px; margin-top: -1px"></i>
+						<div ng-switch on="update.fault.reason" style="padding-left: 20px">
+							<p ng-switch-when="server">{{'profile.update.errors.server'|i18n}}</p>
+							<p ng-switch-when="inv-password">{{'profile.update.errors.password'|i18n}}</p>
+							<p ng-switch-when="match">{{'profile.update.errors.match'|i18n}}</p>
+							<p ng-switch-when="unknown">{{'profile.update.errors.unknown'|i18n}}</p>
+						</div>
+					</div>
+					<div class="animate-show" ng-show="update.success">
+						<i class="icon-ok"
+							style="float: left; background-color: #D3AF7B; margin-right: 5px; margin-top: -1px"></i>
+						<p style="padding-left: 20px">{{'profile.update.success'|i18n}}.</p>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div style="margin-left: 0px">
+		<h3>{{'profile.about.title'|i18n}}</h3>
+		<div style="margin-left: 0px" class="span3" ng-show="about.infoLoaded">
+			<h5>{{'profile.about.ocupation.title'|i18n}}</h5>
+			<div class="btn-group animate-show">
+				<button id="oc-button" class="btn btn-info dropdown-toggle"
+					data-toggle="dropdown">{{about.ocupation | i18n}}</button>
+				<ul class="dropdown-menu">
+					<li ng-repeat="oc in about.langOcupations"
+						ng-click="about.selectOcupation($index)"><a
+						style="cursor: pointer">{{oc |i18n}}</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="span3">
+			<h5>{{'profile.about.karma.title'|i18n}}</h5>
+			<div class="btn-group animate-show">
+				<button id="oc-button" class="btn btn-info" data-toggle="dropdown">{{about.karma}}</button>
+			</div>
+		</div>
+	</div>
+
+</div>

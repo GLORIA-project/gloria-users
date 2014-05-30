@@ -1,0 +1,16 @@
+{
+	"titles" : {
+		"home": "Inicio",
+		"menu": {
+			"header": "Menú",
+			"item": {
+				"header": "Título",
+				"template" : "Plantilla"
+			}
+		},
+		"generic": {
+			"header": "Genérico",
+			"template": "Plantilla"			
+		}
+	}
+}

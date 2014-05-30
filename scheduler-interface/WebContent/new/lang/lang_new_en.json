@@ -1,0 +1,51 @@
+{
+	"header" : "Request an observation",
+	"intro": "We want to offer the possibility of requesting observations to our telescope network, so you can get as soon as possible an image of the object you want. The only thing we ask is that you tell us what you want to observe and we'll find the most appropriate telescope.",
+	"phases": {
+		"one": {
+			"header": "1. Choose an object",
+			"objects" : {
+				"M1": {
+					"name": "M1",
+					"desc": "Crab nebula"
+				},
+				"M8": {
+					"name": "M8",
+					"desc": "Lagoon nebula"
+				},
+				"NGC891": {
+					"name": "NGC891",
+					"desc": "Spiral galaxy"
+				},
+				"M45": {
+					"name": "M45",
+					"desc": "Pleiades"
+				},
+				"NGC1499": {
+					"name": "NGC1499",
+					"desc": "California nebula"
+				},
+				"jupiter": {
+					"name": "Júpiter",
+					"desc": "Planet"
+				},
+				"M31": {
+					"name": "M31",
+					"desc": "Andromeda"
+				},
+				"NGC278": {
+					"name": "NGC278",
+					"desc": "Spiral galaxy"
+				}
+			}
+		},
+		"two": {
+			"header": "2. Confirm the observation",
+			"expl": "With this confirmation, you are asking GLORIA to find a telescope to take a picture for you. If no telescope can get your picture within 3 days, the plan will be discarded. You can accumulate a maximum of 5 active plans, so we recommend that you choose well before confirming.",
+			"limit": "You've reached the maximum number of active plans.",
+			"success": "The observation has been accepted. Take a look",
+			"here": "here",
+			"confirm": "Confirm"
+		}
+	}
+}

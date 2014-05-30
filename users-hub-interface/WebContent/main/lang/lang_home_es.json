@@ -1,0 +1,60 @@
+{
+	"section1": {
+		"title": "Debes saber...",
+		"text": "Que el proyecto GLORIA aún está en una fase temprana de su desarrollo. Las personas que trabajamos en el somos un grupo pequeño, multidisciplinar (astrónomos, informáticos, físicos...) y con una enorme ilusión de que todas las ideas que tenemos se hagan realidad." 
+	},
+	"section2": {
+		"title": "Nuestro objetivo",
+		"text": "Queremos que GLORIA se convierta en la herramienta por excelencia para aprender e investigar en Astronomía. Es una meta ambiciosa y sabemos que hay un largo camino por delante. Nuestro primer hito es ofrecerte un conjunto de experimentos para que pongas a prueba nuestros telescopios y nos ayudes a analizar sus imágenes."
+	},
+	"section3": {
+		"title": "¿Qué puedes hacer?",
+		"paragraph1": "La herramienta básica para aprender e investigar es el experimento. En GLORIA tenemos dos tipos de experimentos: los que sirven para tomar imágenes - online - y los que las analizan - offline -.",
+		"paragraph2": "Por el momento te ofrecemos cuatro experimentos diferentes, los cuales iremos mejorando con tu ayuda. Que disfrutes.",
+		"experiments" : {
+			"solar": {
+				"title": "Experimento solar",
+				"desc": "Explora el Sol y sus manchas. Toma imágenes para ayudar a la medición de la actividad solar."
+			},
+			"night": {
+				"title": "Experimento nocturno",
+				"desc": "Observa el cielo nocturno. Estrellas, galaxias y asteroides te esperan."
+			},
+			"pspace": {
+				"title": "Personal space",
+				"desc": "Elige un evento y encuentra la región del cielo que estaba en el cénit en ese mismo momento."
+			},
+			"wolf": {
+				"title": "Actividad solar",
+				"desc": "Analiza manchas solares en tu Android y contribuye a la medición de la actividad solar."
+			},
+            "luiza": {
+                "title": "Estrellas variables",
+                "desc": "Visualiza la curva de luz de las estrellas."
+            }
+		}
+	},
+	"widgets": {
+		"loading": "Cargando",
+		"excl": "Vaya!",
+		"noimg": "No hay imágenes",
+		"community": {
+			"title": "Imágenes de la comunidad",
+			"slide": {
+				"title": "Imagen del @{p1}@",
+				"date": "@{p1}@"
+			}
+		},
+		"user": {
+			"title": "Tus imágenes",
+			"slide": {
+				"title": "Imagen del @{p1}@",
+				"date": "@{p1}@"
+			}
+		},
+		"telescopes": {
+			"title": "Nuestros telescopios",
+			"ad": "Un mapa más grande"
+		}
+	}
+}

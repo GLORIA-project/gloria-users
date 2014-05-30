@@ -1,0 +1,26 @@
+{
+	"solar": {
+		"type": "main",
+		"path": "/view",
+		"html": "solar/html/parent.html",
+		"js": [
+			"solar/js/main.js",
+			"solar/js/ccds.js",
+			"solar/js/elapsed.js",
+			"solar/js/images.js",
+			"solar/js/mount.js",
+			"solar/js/scams.js",
+			"solar/js/weather.js",
+			"solar/js/jquery.elevatezoom.js"
+		]
+	},
+	"wrong": {
+		"type": "wrong-path",
+		"path": "/view"
+	},
+	"issues": {
+		"path": "/issues",
+		"html": "issues/html/content.html",
+		"js": ["issues/js/issues.js", "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-collapse.js"]		
+	}
+}

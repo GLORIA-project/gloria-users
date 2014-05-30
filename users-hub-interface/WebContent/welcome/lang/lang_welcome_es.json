@@ -1,0 +1,39 @@
+{
+	"brand": {
+		"discover": "Descubre",
+		"learn": "aprende",
+		"research": "investiga",
+		"share": "comparte",		
+		"subtitle": "GLORIA te abre las puertas del universo"
+	},
+	"register": {
+		"title": "Únete a GLORIA",
+		"placeholders": {
+			"alias": "Usuario",
+			"email": "Correo electrónico",
+			"password": "Contraseña",
+			"rep-pass": "Repetir contraseña"
+		},
+		"password-res": "Al menos 6 caracteres que contengan una mayúscula, una minúscula y un número.",
+		"button": "Regístrate",
+		"ad": "Al hacer click en el botón, estás manifestando estar de acuerdo con los",
+		"terms": "términos y condiciones de acceso a GLORIA",
+		"errors": {
+			"server": "Error de conexión al servidor. Disculpa las molestias",
+			"inv-email": "La dirección de correo es incorrecta",
+			"unknown": "Error desconocido",
+			"password": "La contraseña no es válida",
+			"match": "Las contraseñas no son iguales",
+			"alias": "El nombre de usuario ya existe",
+			"email": "La dirección de correo ya existe"
+		},
+		"success": "¡Registro correcto! Revisa tu bandeja de entrada para activar tu cuenta"
+	},
+	"reset": {
+		"title": "Reinicia tu cuenta",
+		"intro": "Si no recuerdas tu contraseña podemos enviarte una nueva generada aleatoriamente. Lo único que necesitamos es que nos digas cuál es la dirección de correo con la que te registraste en GLORIA",
+		"button": "Reiniciar",
+		"success": "¡Solicitud recibida! Echa un vistazo a tu bandeja de entrada para activar tu nueva contraseña",
+		"placeholder": "Correo electrónico"
+	}
+}

@@ -1,0 +1,22 @@
+{			
+	"new": {
+		"type": "main",
+		"path": "/new",
+		"html": "new/html/content.html",
+		"js": ["new/js/new.js", "https://cdn.lfrs.sl/alloyui.com/2.0.0pr6/aui/aui-min.js", "new/js/datepicker.js"]		
+	},
+	"pending": {
+		"path": "/pending",
+		"html": "pending/html/content.html",
+		"js": ["https://cdn.lfrs.sl/alloyui.com/2.0.0pr6/aui/aui-min.js", "pending/js/pending.js"]		
+	},
+	"wrong": {
+		"type": "wrong-path",
+		"path": "/new"
+	},
+	"issues": {
+		"path": "/issues",
+		"html": "issues/html/content.html",
+		"js": ["issues/js/issues.js", "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-collapse.js"]		
+	}
+}

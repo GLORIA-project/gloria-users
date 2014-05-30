@@ -1,0 +1,37 @@
+{
+    "login": {
+        "in": "Connexion",
+        "out": "Déconnexion",
+        "welcome": "Bienvenue",
+        "failed": "La connexion a échoué",
+        "forgot": "Mot de passe oublié?",
+        "new": "Je n'ai pas de compte utilisateur",
+        "email": "Courriel",
+        "password": "Mot de passe"
+    },
+    "footer": {
+        "ack": {
+            "header": "REMERCIEMENTS ET DÉCHARGES",
+            "content": "GLObal Robotic telescopes Intelligent Array for e-Science (GLORIA) est un projet financé par le septième programme cadre de l'Union européenne (FP7/2007-2012), numéro 283783. Tout jugement, opinion, conclusion ou recommendation exprimé sur ce site web est celui de son auteur seul et ne reflète pas nécessairement les opinions de la CE ou de quelque institution impliquée dans le projet GLORIA."
+        },
+        "partners": {
+            "header": "PARTENAIRES DU PROJET"
+        },
+        "bottom": {
+            "header": "AUTEURS ET LICENSES",
+            "license": {
+                "own": {
+                    "pre": "Tout le contenu de ce site par le",
+                    "project": "projet GLORIA",
+                    "post1": "est sous licence",
+                    "name": "Creative Commons Attribution 3.0 Unported License",
+                    "post2": "sauf indication",
+                    "other": "noté"
+                }
+            },
+            "author": "Les logiciels \"GLORIA Authoring Tool\" et \"GLORIA services\" sont développés par @{p1}@ et hébergés à ",
+            "flags": "Toutes les images des drapeaux sont obtenues depuis ",
+            "icons": "Most icons are from "
+        }
+    }
+}

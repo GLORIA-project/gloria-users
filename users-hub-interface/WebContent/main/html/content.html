@@ -1,0 +1,172 @@
+<link href="main/css/styles.css" rel="stylesheet"></link>
+<link href="main/css/barousel.css" rel="stylesheet"></link>
+<div style="margin-top: 50px" ng-controller="HomePageController"
+	ng-show="ready">
+	<div class="row">
+		<div class="span7" style="text-align: justify">
+			<h2 style="margin-top: 0px">{{'home.section1.title' |i18n}}</h2>
+			<p>{{'home.section1.text' |i18n}}</p>
+			<h2 style="margin-top: 15px">{{'home.section2.title' |i18n}}</h2>
+			<p>{{'home.section2.text' |i18n}}</p>
+			<h2 style="margin-top: 15px">{{'home.section3.title' |i18n}}</h2>
+			<p>{{'home.section3.paragraph1' |i18n}}</p>
+			<p>{{'home.section3.paragraph2' |i18n}}</p>
+			<div style="margin-top: 15px"></div>
+			<div>
+				<div class="experiment-banner"
+					style="background-image: url(main/img/sun-alpha.png);">
+					<h4 style="margin-top: 0px">
+						<a style="color: silver" target="_blank" href="reservations/#/new">{{'home.section3.experiments.solar.title'
+							|i18n}}</a>
+					</h4>
+					{{'home.section3.experiments.solar.desc' |i18n}}
+				</div>
+			</div>
+			<div style="margin-top: 15px; background-color: #0F0F0F">
+				<div class="experiment-banner"
+					style="background-image: url(main/img/night-alpha.png);">
+
+					<h4 style="margin-top: 0px">
+						<a style="color: silver" target="_blank" href="reservations/#/new">{{'home.section3.experiments.night.title'
+							|i18n}}</a>
+					</h4>
+					{{'home.section3.experiments.night.desc' |i18n}}
+				</div>
+			</div>
+			<div style="margin-top: 15px; background-color: #0F0F0F">
+				<div class="experiment-banner"
+					style="background-image: url(main/img/pspace-alpha.png);">
+					<h4 style="margin-top: 0px">
+						<a style="color: silver" target="_blank" href="http://personal-space.eu">{{'home.section3.experiments.pspace.title'
+							|i18n}}</a>
+					</h4>
+					{{'home.section3.experiments.pspace.desc' |i18n}}
+				</div>
+			</div>
+			<div style="margin-top: 15px; background-color: #0F0F0F">
+				<div class="experiment-banner"
+					style="background-image: url(main/img/wolf-alpha.png);">
+					<h4 style="margin-top: 0px">
+						<a style="color: silver" target="_blank"
+							href="https://play.google.com/store/apps/details?id=com.gloria.offlineexperiments">{{'home.section3.experiments.wolf.title'
+							|i18n}}</a>
+					</h4>
+					{{'home.section3.experiments.wolf.desc' |i18n}}
+				</div>
+			</div>
+			<div style="margin-top: 15px; background-color: #0F0F0F">
+				<div class="experiment-banner"
+					style="background-image: url(main/img/luiza-alpha.png);">
+					<h4 style="margin-top: 0px">
+						<a style="color: silver" target="_blank"
+							href="http://193.0.87.199/luiza/interface/pi-lc-server.html">{{'home.section3.experiments.luiza.title'
+							|i18n}}</a>
+					</h4>
+					{{'home.section3.experiments.luiza.desc' |i18n}}
+				</div>
+			</div>
+		</div>
+		<div class="span5">
+			<div ng-controller="CommunityImagesController" class="right-bar">
+				<h5
+					style="margin-bottom: 7px; color: gray; margin-top: 8px; text-align: center;">{{'home.widgets.community.title'
+					|i18n}}</h5>
+				<div class="animate-show" ng-show="!loading && slides.length > 0">
+					<div id="comm_carousel" class="barousel"
+						ng-mouseenter="focused=true" ng-mouseleave="focused=false"
+						style="width: 100%; height: 276px; border-bottom: 2px solid #101010; border-top: 2px solid #101010; background-color: #101010">
+						<div class="barousel_image" style="width: 100%; height: 100%">
+
+							<img ng-repeat="slide in slides" src="{{slide.image}}" alt=""
+								ng-class="{'default': $first}" class="">
+						</div>
+						<div class="barousel_content animate-show" ng-show="focused"
+							style="padding: 10px 10px 0 10px; bottom: 25px">
+							<!-- content 1 -->
+							<div ng-repeat="slide in slides" ng-class="{'default': $first}">
+								<p class="header" style="line-height: 20px; font-size: 17px">{{'home.widgets.community.slide.title'
+									| i18n:slide.rt}}</p>
+								<p>{{'home.widgets.community.slide.date' | i18n:(slide.date
+									| utc | date:'completeDate') }}</p>
+								<p>
+									<b style="cursor: default" class="label label-g">{{slide.id}}</b>
+								</p>
+							</div>
+						</div>
+						<div ng-show="false" class="barousel_nav"></div>
+
+					</div>
+				</div>
+				<div class="animate-show" ng-show="!loading && slides.length == 0"
+					style="width: 70%; margin-left: 15%; margin-top: 15px">
+					<div class="alert alert-g">
+						<strong>{{'home.widgets.excl'|i18n}} </strong>{{'home.widgets.noimg'|i18n}}
+					</div>
+				</div>
+				<div class="animate-show" ng-show="loading" class="mess-info"
+					style="width: 50%; margin-left: 25%; margin-top: 15px">
+					<div class="alert alert-g">{{'home.widgets.loading'|i18n}}...</div>
+				</div>
+			</div>
+			<div ng-controller="UserImagesController" class="right-bar"
+				style="margin-top: 15px">
+				<h5
+					style="margin-bottom: 7px; color: gray; text-align: center; margin-top: 8px;">{{'home.widgets.user.title'
+					|i18n}}</h5>
+				<div class="animate-show" ng-show="!loading && slides.length > 0">
+					<div id="user_carousel" class="barousel"
+						ng-mouseenter="focused=true" ng-mouseleave="focused=false"
+						style="width: 100%; height: 276px; border-bottom: 2px solid #101010; border-top: 2px solid #101010; background-color: #101010">
+						<div class="barousel_image" style="width: 100%; height: 100%">
+
+							<img ng-repeat="slide in slides" src="{{slide.image}}" alt=""
+								ng-class="{'default': $first}" class="">
+						</div>
+						<div class="barousel_content animate-show" ng-show="focused"
+							style="padding: 10px 10px 0 10px; bottom: 25px">
+							<!-- content 1 -->
+							<div ng-repeat="slide in slides" ng-class="{'default': $first}">
+								<p class="header" style="line-height: 20px; font-size: 17px">{{'home.widgets.user.slide.title'
+									| i18n:slide.rt}}</p>
+								<p>{{'home.widgets.user.slide.date' | i18n:(slide.date | utc
+									| date:'completeDate') }}</p>
+								<p>
+									<b style="cursor: default" class="label label-g">{{slide.id}}</b>
+								</p>
+							</div>
+						</div>
+						<div ng-show="false" class="barousel_nav"></div>
+					</div>
+				</div>
+				<div class="animate-show" ng-show="!loading && slides.length == 0"
+					style="width: 70%; margin-left: 15%; margin-top: 15px">
+					<div class="alert alert-g">
+						<strong>{{'home.widgets.excl'|i18n}} </strong>{{'home.widgets.noimg'|i18n}}
+					</div>
+				</div>
+				<div class="animate-show" ng-show="loading" class="mess-info"
+					style="width: 50%; margin-left: 25%; margin-top: 15px">
+					<div class="alert alert-g">{{'home.widgets.loading'|i18n}}...</div>
+				</div>
+			</div>
+			<div class="right-bar" style="margin-top: 15px">
+				<h5
+					style="margin-bottom: 7px; color: gray; margin-top: 8px; text-align: center">{{'home.widgets.telescopes.title'
+					|i18n}}</h5>
+				<div>
+					<iframe
+						src="http://maps.google.com/maps/ms?msid=205312274831185087174.0004c066c4c18989826ae&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=15.284185,-3.867187&amp;spn=102.530471,220.78125&amp;z=2&amp;output=embed"
+						frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+						width="368" height="350"></iframe>
+
+					<div align="right" style="margin-bottom: 6px; margin-right: 12px">
+						<a style="color: gray; text-align: right;"
+							href="http://maps.google.com/maps/ms?msid=205312274831185087174.0004c066c4c18989826ae&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=15.284185,-3.867187&amp;spn=102.530471,220.78125&amp;z=2&amp;source=embed">
+							<small>{{'home.widgets.telescopes.ad'|i18n}}</small>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

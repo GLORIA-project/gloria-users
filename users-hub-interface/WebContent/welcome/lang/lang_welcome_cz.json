@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "discover": "Objevujte",
+        "learn": "učte se",
+        "research": "zkoumejte",
+        "share": "sdílejte",
+        "subtitle": "GLORIA otevírá dveře do vesmíru"
+    },
+    "register": {
+        "title": "Přidejte se k projektu GLORIA",
+        "placeholders": {
+            "alias": "Uživatelské jméno",
+            "email": "Email",
+            "password": "Heslo",
+            "rep-pass": "Opakujte heslo"
+        },
+        "password-res": "Nejméně 6 znaků, obsahujících písmena a čísla.",
+        "button": "Registrovat",
+        "ad": "Kliknutím na tlačítko vyjadřujete souhlass",
+        "terms": "s podmínkami projektu GLORIA.",
+        "errors": {
+            "server": "Chyba spojení. Omlouváme se za nepříjemnosti.",
+            "email": "Email je již registrován",
+            "unknown": "Neznámá chyba",
+            "password": "Heslo není platné",
+            "match": "Hesla se neshodují",
+            "alias": "Takové uživatelské jméno je již použito",
+            "inv-email": "Email není platný"
+        },
+        "success": "Registrace proběhla úspěšně! Zkontrolujte svoji poštovní schránku a aktivujte svůj účet."
+    },
+    "reset": {
+        "title": "Obnovení vašeho účtu",
+        "intro": "Pokud jste zapomněl(a) heslo, pošleme vám nové. Potřebuje k tomu vaši emailovou adresu použitou při registraci.",
+        "button": "Obnovit",
+        "success": "Požadavek přijat! Zkontrolujte svoji poštovní schránku a aktivujte nové heslo.",
+        "placeholder": "Email"
+    }
+}

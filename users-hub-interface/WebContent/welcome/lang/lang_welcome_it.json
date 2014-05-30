@@ -1,0 +1,40 @@
+{
+	"brand": {
+		"discover": "Scopri",
+		"learn": "impara",
+		"research": "ricerca",
+		"share": "condividi",		
+		"subtitle": "GLORIA apre le porte dell'universo"
+	},
+	"register": {
+		"title": "Associati a GLORIA",
+		"placeholders": {
+			"alias": "Username",
+			"email": "Email",
+			"password": "Password",
+			"rep-pass": "Ripeti la password"
+		},
+		"password-res": "Almeno 6 caratteri contenenti lettere o numeri",
+		"button": "Registazione",
+		"ad": "Facendo click su questo pulsante accettate",
+		"terms": "i termini e le condizioni di accesso a GLORIA",
+		"errors": {
+			"server": "Errore di connessione al server. Ci spiace per l'inconveniente",
+			"email": "L'email non è corretto",
+			"unknown": "Errore sconosciuto",
+			"password": "Password non valida",
+			"match": "la password non corrisponde",
+			"alias": "Questo username esiste già",
+			"inv-email": "Email non valido",
+			"email": "Questo email esiste già"
+		},
+		"success": "La registrazione ha avuto successo! Controlla i tuoi email per attivare il tuo account."
+	},
+	"reset": {
+		"title": "Aggiorna il tuo account",
+		"intro": "Se hai dimenticato la tua password possiamo inviartene una generata automaticamente. Inviaci l'indirizzo email con cui ti sei registrato su GLORIA.",
+		"button": "Aggiorna",
+		"success": "Richiesta ricevuta! Controlla i tuoi email per attivare la tua nuova password.",
+		"placeholder": "Email"
+	}
+}

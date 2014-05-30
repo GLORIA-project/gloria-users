@@ -1,0 +1,11 @@
+{
+    "header": "Album zdjęć",
+    "slide": {
+        "title": "zdjęcie @{p1}@",
+        "date": "@{p1}@"
+    },
+    "intro": "To narzędzie pozwala na zobaczenie wszystkich zdjęć wykonanych przez użytkowników strony w ciągu ostatniego dnia. Użyj kalendarza, aby zobaczyć zdjęcia z innych dni.",
+    "excl": "Uuups!",
+    "noimg": "Tego dnia nie wykonano żadnych zdjęć :(",
+    "loading": "Ładuję"
+}

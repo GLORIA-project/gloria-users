@@ -1,0 +1,37 @@
+{
+	"titles" : {
+		"home": "Inicio",
+		"experiments": {
+			"header": "Experimentos",
+			"online": {
+				"header": "ONLINE",
+				"solar" : "Solar",
+				"night" : "Nocturno",
+                "scheduler": "Planificador"
+			},
+			"reservations" : {
+				"header": "RESERVAS",
+				"new": "Nueva",
+				"pending": "Pendientes"
+			},
+			"offline": {
+				"header": "OFFLINE",
+				"pspace" : "Personal space",
+				"wolf": "Actividad solar",
+                "luiza": "Estrellas variables"
+			}
+		},
+		"images": {
+			"header": "Imágenes"
+		},
+        "telescopes": {
+            "header": "Telescopios"
+        },
+        "profile": {
+            "header": "Perfil"
+        },
+        "issues": {
+            "header": "Incidencias"
+        }
+	}
+}
