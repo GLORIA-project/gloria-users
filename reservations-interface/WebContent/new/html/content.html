@@ -1,8 +1,36 @@
 <link href="new/css/styles.css" rel="stylesheet"></link>
 <div ng-controller="AvailableReservationsListCtrl" ng-show="ready">
+	<div class="modal hide fade" id="tutorials" style="display: block">
+		<div class="modal-header">
+			<h3>{{'new.tutorials.title' | i18n}}</h3>
+		</div>
+		<div class="modal-body">
+			<center>
+				<div style="margin-bottom: 10px">
+					<iframe width="420" height="315"
+						ng-src="{{tutorials.night}}" frameborder="0"
+						allowfullscreen></iframe>
+				</div>
+				<div>
+					<iframe width="420" height="315"
+						ng-src="{{tutorials.solar}}" frameborder="0"
+						allowfullscreen></iframe>
+				</div>
+			</center>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-warning" data-dismiss="modal">{{'new.tutorials.close' | i18n}}</button>
+		</div>
+	</div>
 	<div class="page-header" style="border: none; margin-bottom: 10px">
 		<div class="row" style="margin-bottom: 0px">
-			<h2 style="margin-left: 18px">{{'new.header'|i18n}}</h2>
+			<h2 style="margin-left: 18px">
+				{{'new.header'|i18n}}
+				<button class="btn btn-info" style="float: right; margin-top: 5px;"
+					ng-click="activateTutorials()">
+					<i class="icon-large icon-play-circle"></i>&nbsp;{{'new.tutorials.title' | i18n}}
+				</button>
+			</h2>
 		</div>
 	</div>
 	<div class="container">
@@ -25,7 +53,7 @@
 						ng-click="experimentClicked('NIGHT')"
 						ng-class="{highCard: experimentSelected == 'NIGHT'}">
 						<h4 style="margin-top: 0px">{{'new.phases.one.experiments.night.name'|i18n}}</h4>
-						{{'new.phases.one.experiments.night.desc'|i18n}}
+						{{'new.phases.one.experiments.night.desc'|i18n}}						
 					</div>
 				</li>
 			</ul>
@@ -172,7 +200,8 @@
 								<p style="font-size: 0.85em; line-height: 15px">{{'new.phases.four.summary.what.text'|i18n:telescopeSelected:
 									experimentSelected}}</p>
 								<h5 style="color: #FF9900; margin-bottom: 5px">{{'new.phases.four.summary.when.title'|i18n}}</h5>
-								<p ng-if="slot.begin != undefined && slot.end != undefined" style="font-size: 0.85em; line-height: 15px">
+								<p ng-if="slot.begin != undefined && slot.end != undefined"
+									style="font-size: 0.85em; line-height: 15px">
 									{{'new.phases.four.summary.when.text'|i18n:(slot.begin | utc |
 									date:'completeDate'):(slot.end | utc | date:'completeDate')}}</p>
 								<div ng-show="!reservationDone && !reservationError"

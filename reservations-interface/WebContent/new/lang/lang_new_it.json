@@ -85,5 +85,9 @@
             }
 
 		}
+	},
+	"tutorials": {
+		"title": "Tutorials",
+		"close": "Close"
 	}
 }

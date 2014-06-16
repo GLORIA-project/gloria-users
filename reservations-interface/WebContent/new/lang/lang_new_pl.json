@@ -84,5 +84,9 @@
                 "end": "Zakończ"
             }
         }
-    }
+    },
+	"tutorials": {
+		"title": "Tutorials",
+		"close": "Close"
+	}
 }

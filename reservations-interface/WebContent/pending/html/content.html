@@ -25,9 +25,9 @@
 			<i class="icon-refresh"></i>
 		</button>
 		<button ng-show="errorButton.show" tooltip-popup-delay="500"
-			tooltip="{{'pending.error' |i18n}}" tooltip-placement="top"
-			class="btn btn-danger" style="position: absolute"
-			ng-style="errorButton.style">
+			ng-click="cancel()" tooltip="{{'pending.error' |i18n}}"
+			tooltip-placement="top" class="btn btn-danger"
+			style="position: absolute" ng-style="errorButton.style">
 			<i class="icon-wrench"></i>
 		</button>
 		<button ng-show="cancelButton.show" ng-click="cancel()"

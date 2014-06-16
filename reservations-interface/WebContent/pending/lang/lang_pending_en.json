@@ -10,7 +10,7 @@
     "go": "Go",
     "cancel": "Cancel",
     "refresh": "Loading",
-    "error": "Telescope problem",
+    "error": "Telescope not available",
     "table": {
         "experiment": "Experiment",
         "begin": "Begin",

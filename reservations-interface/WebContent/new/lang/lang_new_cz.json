@@ -80,5 +80,9 @@
                 "end": "Konec"
             }
         }
-    }
+    },
+	"tutorials": {
+		"title": "Tutorials",
+		"close": "Close"
+	}
 }

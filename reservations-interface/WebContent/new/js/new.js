@@ -125,9 +125,23 @@ function buildUIAvTable(scope, elementName, paginationName, filter) {
 }
 
 function AvailableReservationsListCtrl($gloriaAPI, $scope, $timeout, $location, $anchorScroll,
-		$gloriaLocale, $filter) {
+		$gloriaLocale, $filter, $sce) {
 
 	$scope.ready = false;
+	
+	$scope.tutorials =  {
+		night: "//www.youtube.com/embed/rFvY3ZBWnJ8",
+		solar: "//www.youtube.com/embed/Q7ttk_bGPkQ"
+	};
+	
+	var lang = $gloriaLocale.getPreferredLanguage();
+	if (lang.indexOf('es') == 0) {
+		$scope.tutorials.night = '//www.youtube.com/embed/DqOHZB1hsuM';
+		$scope.tutorials.solar = '//www.youtube.com/embed/kylY8ofpkJ0';
+	}
+	
+	$scope.tutorials.night = $sce.trustAsResourceUrl($scope.tutorials.night);
+	$scope.tutorials.solar = $sce.trustAsResourceUrl($scope.tutorials.solar);
 	
 	$gloriaLocale.loadResource('new/lang', 'new', function() {
 		$scope.ready = true;
@@ -211,4 +225,8 @@ function AvailableReservationsListCtrl($gloriaAPI, $scope, $timeout, $location, 
 	$scope.$on('$destroy', function() {
 		$timeout.cancel($scope.timer);
 	});
+	
+	$scope.activateTutorials = function(){
+		$("#tutorials").modal();
+	};
 }

@@ -372,13 +372,13 @@ function PendingReservationsListCtrl($gloriaAPI, $scope, $timeout, $location,
 		$scope.cancelButton.show = false;
 		$scope.refreshButton.show = false;
 		$scope.errorButton.show = false;
+		$timeout.cancel($scope.timer);
 	};
 
 	$scope.cancel = function() {
 		$scope.showTelescope = false;
 
 		$gloriaAPI.cancelReservation($scope.selected.reservationId, function() {
-
 			loadPendingReservations($scope, $gloriaAPI).then(function() {
 				$scope.updateAfterCancel();
 			}, function() {

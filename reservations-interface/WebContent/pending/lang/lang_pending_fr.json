@@ -11,7 +11,7 @@
     "go": "Allez",
     "cancel": "Annuler",
     "refresh": "Loading",
-    "error": "Telescope problem",
+    "error": "Telescope not available",
     "table": {
         "experiment": "Expérience",
         "begin": "Début",

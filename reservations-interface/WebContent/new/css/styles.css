@@ -100,3 +100,15 @@
 .pagination {
 	margin: 0px;
 }
+
+.modal {
+	background-color: black;
+}
+
+.modal-body {
+	background-color: black;
+}
+
+.modal-footer {
+	background-color: black;
+}
