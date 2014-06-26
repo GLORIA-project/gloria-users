@@ -4,6 +4,10 @@
 	border-bottom: none;
 }
 
+.modal.fade {
+	top: -1000px;
+}
+
 #table .table {
 	margin-bottom: 0px;
 }

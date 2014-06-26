@@ -10,7 +10,7 @@
     "go": "Перейти",
     "cancel": "Отмена",
     "refresh": "Loading",
-    "error": "Telescope not available",
+    "error": "Telescope not available. Click to cancel.",
     "table": {
         "experiment": "Эксперимент",
         "begin": "Начало",

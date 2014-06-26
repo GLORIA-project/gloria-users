@@ -1,11 +1,11 @@
 <link href="new/css/styles.css" rel="stylesheet"></link>
 <div ng-controller="AvailableReservationsListCtrl" ng-show="ready">
-	<div class="modal hide fade" id="tutorials" style="display: block">
+	<div class="modal fade" id="tutorials" style="display: block">
 		<div class="modal-header">
 			<h3>{{'new.tutorials.title' | i18n}}</h3>
 		</div>
-		<div class="modal-body">
-			<center>
+		<div class="modal-body" style="max-height:550px">
+			<div align="center">
 				<div style="margin-bottom: 10px">
 					<iframe width="420" height="315"
 						ng-src="{{tutorials.night}}" frameborder="0"
@@ -16,7 +16,7 @@
 						ng-src="{{tutorials.solar}}" frameborder="0"
 						allowfullscreen></iframe>
 				</div>
-			</center>
+			</div>
 		</div>
 		<div class="modal-footer">
 			<button class="btn btn-warning" data-dismiss="modal">{{'new.tutorials.close' | i18n}}</button>

@@ -10,7 +10,7 @@
 	"go": "Ir",
 	"cancel": "Cancelar",
     "refresh": "Cargando",
-    "error": "Telescopio no disponible",
+    "error": "Telescopio no disponible. Haz click para cancelar.",
 	"table": {
 		"experiment": "Experimento",
 		"begin": "Comienzo",
