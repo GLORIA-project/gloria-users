@@ -176,6 +176,13 @@ function PendingReservationsListCtrl($gloriaAPI, $scope, $timeout, $location,
 		$window, $gloriaLocale, $filter) {
 
 	$scope.pendingReady = false;
+	
+	$scope.questionnaire = "http://goo.gl/wHzS4F";
+		
+		var lang = $gloriaLocale.getPreferredLanguage();
+		if (lang.indexOf('es') == 0) {
+			$scope.questionnaire = 'http://goo.gl/aZFMLy';
+		}
 
 	toolbox.scrollTo('header');
 
@@ -192,6 +199,9 @@ function PendingReservationsListCtrl($gloriaAPI, $scope, $timeout, $location,
 	$scope.telescopeStyle = {
 		border : '1px solid rgba(192, 192, 192, 0.13)',
 		borderRadius : '2px'
+	};
+	$scope.fbStyle = {
+		height : '0px'	
 	};
 	$scope.mountStyle = {};
 	$scope.weatherStyle = {};
@@ -217,9 +227,9 @@ function PendingReservationsListCtrl($gloriaAPI, $scope, $timeout, $location,
 			$scope.tableBuilt = true;
 		}
 	});
-
-	$scope.$watch('selected', function() {
-		if ($scope.selected != null) {
+	
+	$scope.updateOnSelected = function () {
+		if ($scope.selected != null) {			
 			$scope.reservationSelected = true;
 			$scope.goButton.show = false;
 			$scope.cancelButton.show = false;
@@ -239,10 +249,13 @@ function PendingReservationsListCtrl($gloriaAPI, $scope, $timeout, $location,
 
 			$scope.errorButton.style = $scope.cancelButton.style;
 			$scope.refreshButton.style = $scope.goButton.style;
-
 			$scope.refreshInfo();
 			$scope.loadTelescopeState();
 		}
+	};
+
+	$scope.$watch('selected', function() {
+		$scope.updateOnSelected();
 	});
 
 	$scope.showRTStatus = function(left) {
@@ -307,6 +320,19 @@ function PendingReservationsListCtrl($gloriaAPI, $scope, $timeout, $location,
 		});
 	};
 
+	$scope.$watch('errorButton.show', function() {
+		if ($scope.errorButton.show) {
+			$('#fbButton').addClass('shake');
+		} else {
+			$('#fbButton').removeClass('shake');
+		}
+	});
+	
+	$scope.openQuestionnaire = function() {
+		$('#fbButton').removeClass('shake');
+		window.open($scope.questionnaire, '_blank');
+	};
+	
 	$scope.refreshInfo = function() {
 		$gloriaAPI.getReservationInformation($scope.selected.reservationId,
 				function(info) {
@@ -334,7 +360,7 @@ function PendingReservationsListCtrl($gloriaAPI, $scope, $timeout, $location,
 						$scope.goButton.show = false;
 						$scope.cancelButton.show = false;
 						$scope.refreshButton.show = false;
-						$scope.errorButton.show = true;
+						$scope.errorButton.show = true;						
 						$scope.showRTStatus(true);
 					}
 

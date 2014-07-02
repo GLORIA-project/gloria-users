@@ -3,7 +3,14 @@
 	<div id="header" class="page-header"
 		style="border: none; margin-bottom: 10px">
 		<div class="row" style="margin-bottom: 0px">
-			<h2 style="margin-left: 18px">{{'pending.header'|i18n}}</h2>
+			<h2 style="margin-left: 18px">
+				{{'pending.header'|i18n}}
+				<button id="fbButton" class="shake btn btn-info"
+					style="margin-top: 12px; float:right"
+					ng-click="openQuestionnaire()">
+					<i class="icon-large icon-ok"></i>&nbsp;Feedback
+				</button>
+			</h2>
 		</div>
 	</div>
 	<div style="margin-bottom: 35px">
