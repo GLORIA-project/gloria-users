@@ -29,18 +29,15 @@
 				}
 			},			
 			{
-				"type": "divider",
-				"visibility": "ADMIN"	
+				"type": "divider"
 			},
 			{
 				"type": "header",
-				"text": "navbar.titles.experiments.online.header",
-				"visibility": "ADMIN"			
+				"text": "navbar.titles.experiments.online.header"
 			},
 			{
 				"type": "link",
 				"text": "navbar.titles.experiments.online.scheduler",
-				"visibility": "ADMIN",
 				"href": {
 					"app": "scheduler",
 					"path": "/"
