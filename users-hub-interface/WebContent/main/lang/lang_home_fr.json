@@ -20,6 +20,10 @@
                 "title": "Expérience nocturne",
                 "desc": "Observez le ciel nocturne. Les planètes, les étoiles, les galaxies et les astéroîdes vous attendent. Use different filters to build RGB images with"
             },
+            "batch": {
+                "title": "Batch experiment",
+                "desc": "Send your observing plan and GLORIA will choose the telescope. You will be able define some contraints for your observation"
+            },
             "pspace": {
                 "title": "Espace personnel",
                 "desc": "Choisissez un événement important de votre vie et observez le ciel comme il était à ce moment",

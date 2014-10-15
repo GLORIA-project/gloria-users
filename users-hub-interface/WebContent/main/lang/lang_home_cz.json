@@ -20,6 +20,10 @@
                 "title": "Noční experiment",
                 "desc": "Pozorujte noční oblohu. Planety, hvězdy, galaxie a asteroidy čekají. Use different filters to build RGB images with"
             },
+            "batch": {
+                "title": "Batch experiment",
+                "desc": "Send your observing plan and GLORIA will choose the telescope. You will be able define some contraints for your observation"
+            },
             "pspace": {
                 "title": "Osobní vesmír",
                 "desc": "Vyberte si důležitou událost ve vašem životě a podívejte se, co se dělo v té chvíli přímo nad vaší hlavou."

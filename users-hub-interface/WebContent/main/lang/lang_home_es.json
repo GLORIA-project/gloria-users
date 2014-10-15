@@ -20,6 +20,10 @@
 				"title": "Experimento nocturno",
 				"desc": "Observa el cielo nocturno. Estrellas, galaxias y asteroides te esperan. Usa diferentes filtros para componer imágenes RGB con"
 			},
+			 "batch": {
+                "title": "Planificador",
+                "desc": "Envía tu plan de observación y GLORIA elegirá el telescopio que mejor se adapte ella."
+            },
 			"pspace": {
 				"title": "Personal space",
 				"desc": "Elige un evento y encuentra la región del cielo que estaba en el cénit en ese mismo momento."

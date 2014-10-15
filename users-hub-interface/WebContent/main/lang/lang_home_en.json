@@ -20,6 +20,10 @@
                 "title": "Night experiment",
                 "desc": "Watch the night sky. Planets, stars, galaxies and asteroids await. Use different filters to build RGB images with"
             },
+            "batch": {
+                "title": "Batch experiment",
+                "desc": "Send your observing plan and GLORIA will choose the telescope. You will be able define some contraints for your observation"
+            },
             "pspace": {
                 "title": "Personal space",
                 "desc": "Choose an important event in your life and see the sky that was directly overhead at that exact moment."

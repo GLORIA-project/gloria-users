@@ -20,6 +20,10 @@
                 "title": "Nocne obserwacje",
                 "desc": "Popatrz na niebo w nocy. Czekają tam na Ciebie planety, gwiazdy, galaktyki i planetoidy.  Use different filters to build RGB images with"
             },
+            "batch": {
+                "title": "Batch experiment",
+                "desc": "Send your observing plan and GLORIA will choose the telescope. You will be able define some contraints for your observation"
+            },
             "pspace": {
                 "title": "Personal space",
                 "desc": "Wybierz istotny dla Ciebie moment w życiu i zobacz jak wyglądało niebo nad Twoją głową dokładnie w tej ulotnej chwili."

@@ -20,6 +20,10 @@
                 "title": "Ночной эксперимент",
                 "desc": "Наблюдения ночного неба. Планеты, звёзды, галактики и астероиды ждут вас.  Use different filters to build RGB images with"
             },
+            "batch": {
+                "title": "Batch experiment",
+                "desc": "Send your observing plan and GLORIA will choose the telescope. You will be able define some contraints for your observation"
+            },
             "pspace": {
                 "title": "Личное небо",
                 "desc": "Выберите важное событие своей жизни и узнайте, какая область неба находилась прямо над вами в тот момент."
