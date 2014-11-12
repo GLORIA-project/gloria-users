@@ -32,3 +32,6 @@
 .btn-group.open .btn-info.dropdown-toggle {
 	background-color: #FF9900;
 }
+.input_spinner{
+	width:40px;
+}
