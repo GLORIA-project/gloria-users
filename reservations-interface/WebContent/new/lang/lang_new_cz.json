@@ -45,6 +45,10 @@
                 "d50": {
                     "name": "D50",
                     "desc": "Ondrejov, Czech Republic (AUAV)"
+                },
+                "watcher": {
+                	"name": "WATCHER",
+                	"desc": "Bloemfontein, South Africa (UCD)"
                 }
             }
         },
