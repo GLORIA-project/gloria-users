@@ -1,5 +1,5 @@
 function ProfileController($scope, $gloriaAPI, $timeout, $gloriaLocale, Login,
-		$filter) {
+		$filter,$http) {
 
 	$scope.ready = false;
 
@@ -42,18 +42,44 @@ function ProfileController($scope, $gloriaAPI, $timeout, $gloriaLocale, Login,
 	$gloriaAPI.getUserInformation(function(data) {
 		$scope.about.ocupation = 'profile.about.ocupation.' + data.ocupation;
 
-		$gloriaAPI.getUserKarma(data.name, function(karmaData) {
+//		$gloriaAPI.getUserKarma(data.name, function(karmaData) {
+//			if (karmaData != undefined && karmaData != '') {
+//				$scope.about.karma = karmaData.karma[0];
+//				console.log("El karma es:"+karmaData);				
+//			} else {
+//				$scope.about.karma = "?";
+//			}
+//			$scope.about.infoLoaded = true;
+//		}, function(error) {
+//			$scope.about.infoLoaded = true;
+//		});
+
+//		$.get(
+//			    "http://users.gloria-project.eu/karma/rest/karma/execute/get_karma/"+data.name,
+//			    function(datas) {
+//			       alert('page content: ' + datas);
+//			    }
+//			);
+
+		
+		$http({
+		    url: 'http://saturno.datsi.fi.upm.es/karma/rest/karma/execute/get_karma/' + data.name,
+		    method: 'GET',
+		    headers: { 'Content-Type': 'application/json'},
+		}).success(function(karmaData) {
 			if (karmaData != undefined && karmaData != '') {
 				$scope.about.karma = karmaData.karma[0];
-				console.log(karmaData);				
+				console.log("El karma es:"+karmaData);				
 			} else {
 				$scope.about.karma = "?";
 			}
 			$scope.about.infoLoaded = true;
-		}, function(error) {
-			$scope.about.infoLoaded = true;
-		});
-
+		}).error(function(dataKarma) {
+	        $scope.about.karma = "?";
+	        $scope.about.infoLoaded = true;
+	      }); 
+		
+		
 	}, function(error) {
 		$scope.about.infoLoaded = true;
 	});
