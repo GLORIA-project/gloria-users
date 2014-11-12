@@ -32,5 +32,12 @@
 		"karma": {
 			"title": "Your Karma"			
 		}
+	},
+	"policy":{
+		"title":"Current policy",
+		"points_reservation":"Points per reservation",
+		"points_image":"Points per image",
+		"points_offline": "Points per offline experiment execution",
+		"points_questionnaire": "Points per questionnaire"
 	}
 }
