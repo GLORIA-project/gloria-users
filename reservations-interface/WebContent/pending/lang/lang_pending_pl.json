@@ -21,5 +21,6 @@
     "status": "Current status",
     "mount": "Mount",
     "dome": "Dome",
-    "weather": "Weather"
+    "weather": "Weather",
+    "feedback": "Feedback"
 }

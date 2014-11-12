@@ -2,7 +2,7 @@
     "header": "Your reservation",
     "intro": {
         "p1": "All timeslots you are allocated will be part of your pending reservations until they have expired. Remember that time is exclusively for you, nobody else can use it. The maximum number of reservations that you can accumulate is 2, but they could be simultaneous!",
-        "p2": "This panel allows you to manage your reservations, so you can review and cancel them, and as soon as they are active, access the experiment and control the telescope. To do this, simply click the reservation of interest and see your options. It is important to note that when the time comes to start your experiment, the weather may prohibit the telescope from observing."
+        "p2": "This panel allows you to manage your reservations, so you can review and cancel them, and as soon as they are active, access the experiment and control the telescope. To do this, simply click the reservation of interest and see your options. It is important to know that eather poor weather, technical issues, or a high priority unforeseen astronomical phenomenon, could prevent the telescope to perform your observation."
     },
     "loading": "Loading",
     "nores": "You do not have any pending reservation now. Go and get one for you.",
@@ -21,5 +21,6 @@
     "status": "Current status",
     "mount": "Mount",
     "dome": "Dome",
-    "weather": "Weather"
+    "weather": "Weather",
+    "feedback": "Feedback"
 }
