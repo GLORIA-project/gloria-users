@@ -125,18 +125,46 @@ function buildUIAvTable(scope, elementName, paginationName, filter) {
 }
 
 function AvailableReservationsListCtrl($gloriaAPI, $scope, $timeout, $location, $anchorScroll,
-		$gloriaLocale, $filter, $sce) {
+		$gloriaLocale, $filter, $sce, $http) {
 
 	$scope.ready = false;
 	
 	$scope.tutorials =  {
-		night: "//www.youtube.com/embed/rFvY3ZBWnJ8",
+		night: "//www.youtube.com/embed/E-G2GMNle_s",
 		solar: "//www.youtube.com/embed/Q7ttk_bGPkQ"
 	};
 	
+	$scope.karma_tads= 0;
+	$scope.karma_tadn = 0;
+	$scope.karma_bootes2 = 60;
+	$scope.karma_d50 = 60;
+	$scope.karma_bart = 40;
+	$scope.karma_watcher = 30;
+	$scope.karma_user = -1;
+	
+	$gloriaAPI.getUserInformation(function(data) {
+		$http({
+		    url: 'http://saturno.datsi.fi.upm.es/karma/rest/karma/execute/get_karma/' + data.name,
+		    method: 'GET',
+		    headers: { 'Content-Type': 'application/json'},
+		}).success(function(karmaData) {
+			if (karmaData != undefined && karmaData != '') {
+				$scope.karma_user = karmaData.karma[0];
+								
+			} else {
+				console("Error to retrive karma");
+			}
+			
+		}).error(function(karmaData) {
+	        
+	    }); 
+	});
+	
+	
+	
 	var lang = $gloriaLocale.getPreferredLanguage();
 	if (lang.indexOf('es') == 0) {
-		$scope.tutorials.night = '//www.youtube.com/embed/DqOHZB1hsuM';
+		$scope.tutorials.night = '//www.youtube.com/embed/l8IcB7AD9ws';
 		$scope.tutorials.solar = '//www.youtube.com/embed/kylY8ofpkJ0';
 	}
 	
