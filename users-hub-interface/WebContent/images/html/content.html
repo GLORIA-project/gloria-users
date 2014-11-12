@@ -10,6 +10,104 @@
 		<p>{{'images.intro'|i18n}}</p>
 		<p></p>
 	</div>
+	<!-- New Code -->
+	<div ng-controller="AlbumFormCtrl" ng-init="loading_telescopes=true;show_end=false;show_begin=false">
+		<div class="row">
+			<div class="control-group span4">
+				  <label class="control-label" for="objtoobserve" style="font-size:20px;margin-bottom:10px">Target</label>
+				  <div class="controls" >
+				    <label class="radio">
+				      <input type="radio" ng-model="target_type" value="name" ng-click=""/>
+				      Name of the target
+				    </label>
+				    <div ng-show="target_type=='name'" class="animate-show">
+				    	<input style="margin-left:15px" type="text" ng-model="target_name"/>
+				    </div>
+				    <label class="radio">
+				      <input type="radio" ng-model="target_type" value="coordinates" ng-click=""/>
+				      Coordinates of the target
+				    </label>
+				    <div ng-show="target_type=='coordinates'" class="animate-show">
+				    	<div class="row">
+					    	<label class="span1">Ra:</label>
+					    	<input class="span3" style="margin-left:15px" type="text" ng-model="ra_coordinate"/>	
+				    	</div>
+				    	<div class="row">
+				    		<label class="span1">Dec:</label>
+				    		<input class="span3" style="margin-left:15px" type="text" ng-model="dec_coordinate"/>
+				    	</div>
+				    	<div class="row">
+				    		<label class="span1">Radius:</label>
+				    		<input class="span3" style="margin-left:15px" type="text" ng-model="radius"/>
+				    	</div>
+				    </div>
+				  </div>
+			</div>
+			<div class="span3">
+				<label style="font-size:20px;margin-bottom:10px">Experiments</label>
+				<div style="margin-left:5%">
+					<label ng-repeat="experiment in experiments">
+						<input type="checkbox" ng-checked="experiments_selection.indexOf(experiment) > -1" ng-value="experiment" ng-click="toogleExperimentSelection(experiment)">
+  						<!-- <input type="checkbox" checklist-model="selected_experiment.experiments" checklist-value="experiment"> --> {{experiment}}
+					</label>
+				</div>
+			</div>
+			<div class="span5">
+				<label style="font-size:20px;margin-bottom:10px">Telescopes</label>
+				<div class="animate-show mess-info" ng-show="loading_telescopes"
+					style="width: 40%;margin-left:30%">
+					<br>
+					<div class="alert alert-g">
+						<strong>Loading</strong>...
+					</div>
+				</div>
+				<div ng-show="!loading_telescopes">
+					<div class="span2">
+					<label ng-repeat="telescope in telescopes | filter: {col:1}">
+  						<input type="checkbox" ng-checked="telescopes_selection.indexOf(telescope) > -1" ng-value="telescope" ng-click="toogleTelescopeSelection(telescope)"> {{telescope.name}}
+					</label>
+					</div>
+					<div class="span2">
+					<label ng-repeat="telescope in telescopes | filter: {col:2}">
+  						<input type="checkbox" ng-checked="telescopes_selection.indexOf(telescope) > -1" ng-value="telescope" ng-click="toogleTelescopeSelection(telescope)"> {{telescope.name}}
+					</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			
+			 	<label style="font-size:20px;margin-bottom:10px;margin-top:10px">Date Interval</label>
+			 	<div class="span5">
+			 		<label>Begin</label>
+			 		 <input type="text" datepicker-popup="dd-MM-yyyy" ng-model="dt_begin" is-open="opened1" min="minDate" max="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true"/>
+            		 <button class="btn" style="margin-top:-10px" ng-click="open($event,'opened1')"><span class="icon-large icon-calendar"></span></button>
+<!-- 					<input type="text" ng-model="begin-interval"/>
+					<button class="icon-large icon-calendar" ng-click="show_begin=!show_begin;show_end=false"></button> -->
+			 	</div>
+				<div class="span5">
+			 		<label>End</label>
+			 		<input type="text" datepicker-popup="dd-MM-yyyy" ng-model="dt_end" is-open="opened2" min="minDate" max="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" />
+            		<button class="btn" style="margin-top:-10px" ng-click="open($event,'opened2')"><span class="icon-large icon-calendar"></span></button>  
+<!-- 					<input type="text" ng-model="end_interval"/>
+					<button class="icon-large icon-calendar" ng-click="show_end=!show_end;show_begin=false"></button> -->
+			 	</div>
+			 	<button class="btn btn-reg span2" ng-click="search()">Search</button>
+			 	<!-- 
+			 	<div class="row" style="margin-left:5%">
+				 	<datepicker align="left" class="rowBack" style="color: silver"
+							ng-model="dt_begin" open="opened" min="'2013-06-01'" max="current"
+							date-disabled="disabled(date, mode)" ng-required="true" ng-show="show_begin" date-format="dd-mm-yy"></datepicker>
+					<datepicker align="left" class="rowBack" style="color: silver"
+							ng-model="dt_end" open="opened" min="'2013-06-01'" max="current"
+							date-disabled="disabled(date, mode)" ng-required="true" ng-show="show_end"></datepicker>
+			 	</div>
+			 	 -->
+			
+		</div>
+	</div>
+	<!-- End New Code -->
+	<!-- 
 	<div class="row">
 		<div class="span5">
 			<div ng-controller="DatepickerCtrl">
@@ -66,4 +164,5 @@
 			</div>
 		</div>
 	</div>
+	 -->
 </div>
