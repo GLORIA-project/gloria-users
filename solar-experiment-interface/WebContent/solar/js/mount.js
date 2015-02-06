@@ -151,7 +151,8 @@ function SetTargetMessage(scope) {
 function SolarMountCtrl($gloriaAPI, $sequenceFactory, $scope, $timeout) {
 
 	$scope.sequence = $sequenceFactory.getSequence();
-	$scope.targetReady = false;
+	//$scope.targetReady = false;
+	$scope.targetReady = true;
 	$scope.pointDone = true;
 	$scope.pointingEnabled = false;
 	$scope.targetMessage = "";

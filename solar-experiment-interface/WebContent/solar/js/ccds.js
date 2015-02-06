@@ -91,7 +91,7 @@ function LoadContinuousImage($gloriaAPI, scope, order) {
 				function() {
 					scope.continuousMode = false;
 				}, function(error) {
-					scope.$parent.$parent.deviceOnError = true;
+					//scope.$parent.$parent.deviceOnError = true;
 				});
 	});
 
@@ -100,7 +100,7 @@ function LoadContinuousImage($gloriaAPI, scope, order) {
 				function() {
 					scope.continuousMode = true;
 				}, function(error) {
-					scope.$parent.$parent.deviceOnError = true;
+					//scope.$parent.$parent.deviceOnError = true;
 				});
 	});
 }
@@ -173,7 +173,7 @@ function LoadCCDAttributes($gloriaAPI, scope, order) {
 		return $gloriaAPI.executeOperation(scope.rid, 'get_ccd_attributes',
 				function() {
 				}, function(error) {
-					scope.$parent.$parent.deviceOnError = true;
+					//scope.$parent.$parent.deviceOnError = true;
 				});
 	});
 }

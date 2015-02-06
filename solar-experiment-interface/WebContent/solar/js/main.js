@@ -85,8 +85,8 @@ function SolarMainCtrl($gloriaAPI, $scope, $timeout, $gloriaLocale,
 	};
 
 	$scope.onDeviceProblem = function() {
-		$scope.deviceProblem = true;
-		$scope.reservationActive = false;
+		//$scope.deviceProblem = true;
+		//$scope.reservationActive = false;
 	};
 
 	$scope.$watch('reservationEnd', function() {
