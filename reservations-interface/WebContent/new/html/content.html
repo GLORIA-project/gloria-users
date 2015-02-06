@@ -66,24 +66,22 @@
 					<li ng-show="experimentSelected == 'SOLAR'" class="span6">
 						<div class="experiment-banner pcard"
 							style="background-image: url(new/img/tads-alpha.png)"
-							ng-click="karma_user >=  karma_tads && telescopeClicked('TADs')"
+							ng-click="telescopeClicked('TADs')"
 							ng-class="{highCard: telescopeSelected == 'TADs'}">
 							<h4 style="margin-top: 0px">{{'new.phases.two.telescopes.tads.name'|i18n}}</h4>
 							{{'new.phases.two.telescopes.tads.desc'|i18n}}
 						</div>
-						<div ng-hide="karma_tads < 50" style="color:red;margin-top:10px;">Your karma {{karma_user}} is lower than the telescope limit {{karma_tads}}</div>
 					</li>
 					<li ng-show="experimentSelected == 'NIGHT'" class="span6">
 						<div class="experiment-banner pcard"
 							style="background-image: url(new/img/bart-alpha.png);"
-							ng-click="karma_user >= karma_bart && telescopeClicked('BART')"
+							ng-click="telescopeClicked('BART')"
 							ng-class="{highCard: telescopeSelected == 'BART'}">
 							<h4 style="margin-top: 0px">{{'new.phases.two.telescopes.bart.name'|i18n}}</h4>
 							{{'new.phases.two.telescopes.bart.desc'|i18n}}
 						</div>
-						<div ng-hide="karma_bart < karma_user" style="color:red;margin-top:10px;">Your karma {{karma_user}} is lower than the telescope limit {{karma_bart}}</div>
 					</li>
-					<!--
+					
 					<li ng-show="experimentSelected == 'NIGHT'" class="span6">
 						<div class="experiment-banner pcard"
 							style="background-image: url(new/img/b1-alpha.png);"
@@ -93,6 +91,7 @@
 							{{'new.phases.two.telescopes.b1a.desc'|i18n}}
 						</div>
 					</li>
+					<!--
 					 <li ng-show="experimentSelected == 'NIGHT'" class="span6">
 						<div class="experiment-banner pcard"
 							style="background-image: url(new/img/b1-alpha.png);"
@@ -105,12 +104,11 @@
 					<li ng-show="experimentSelected == 'NIGHT'" class="span6">
 						<div class="experiment-banner pcard"
 							style="background-image: url(new/img/b2-alpha.png);"
-							ng-click="karma_user >= karma_bootes2 && telescopeClicked('BOOTES-2')"
+							ng-click="telescopeClicked('BOOTES-2')"
 							ng-class="{highCard: telescopeSelected == 'BOOTES-2'}">
 							<h4 style="margin-top: 0px">{{'new.phases.two.telescopes.b2.name'|i18n}}</h4>
 							{{'new.phases.two.telescopes.b2.desc'|i18n}}
 						</div>
-						<div ng-hide="karma_bootes2 < karma_user" style="color:red;margin-top:10px;">Your karma {{karma_user}} is lower than the telescope limit {{karma_bootes2}}</div>
 					</li>
 					<!-- <li ng-show="experimentSelected == 'NIGHT'" class="span6">
 						<div class="experiment-banner pcard"
@@ -124,32 +122,29 @@
 					<li ng-show="experimentSelected == 'NIGHT'" class="span6">
 						<div class="experiment-banner pcard"
 							style="background-image: url(new/img/tadn-alpha.png);"
-							ng-click="karma_user >= karma_tadn && telescopeClicked('TADn')"
+							ng-click="telescopeClicked('TADn')"
 							ng-class="{highCard: telescopeSelected == 'TADn'}">
 							<h4 style="margin-top: 0px">{{'new.phases.two.telescopes.tadn.name'|i18n}}</h4>
 							{{'new.phases.two.telescopes.tadn.desc'|i18n}}
 						</div>
-						<div ng-hide="karma_tadn < karma_user" style="color:red;margin-top:10px;">Your karma {{karma_user}} is lower than the telescope limit {{karma_tadn}}</div>
 					</li>
 					<li ng-show="experimentSelected == 'NIGHT'" class="span6">
 						<div class="experiment-banner pcard"
 							style="background-image: url(new/img/d50-alpha.png);"
-							ng-click="karma_user  >= karma_d50 && telescopeClicked('D50')"
+							ng-click="telescopeClicked('D50')"
 							ng-class="{highCard: telescopeSelected == 'D50'}">
 							<h4 style="margin-top: 0px">{{'new.phases.two.telescopes.d50.name'|i18n}}</h4>
 							{{'new.phases.two.telescopes.d50.desc'|i18n}}
 						</div>
-						<div ng-hide="karma_d50 < karma_user" style="color:red;margin-top:10px;">Your karma {{karma_user}} is lower than the telescope limit {{karma_d50}}</div>
 					</li>
 					<li ng-show="experimentSelected == 'NIGHT'" class="span6">
 						<div class="experiment-banner pcard"
 							style="background-image: url(new/img/watcher-alpha.png);"
-							ng-click="karma_user > karma_watcher && telescopeClicked('WATCHER')"
+							ng-click="telescopeClicked('WATCHER')"
 							ng-class="{highCard: telescopeSelected == 'WATCHER'}">
 							<h4 style="margin-top: 0px">{{'new.phases.two.telescopes.watcher.name'|i18n}}</h4>
 							{{'new.phases.two.telescopes.watcher.desc'|i18n}}
 						</div>
-						<div ng-hide="karma_watcher < karma_user" style="color:red;margin-top:10px;">Your karma {{karma_user}} is lower than the telescope limit {{karma_watcher}}</div>
 					</li>
 				</ul>
 			</div>
